@@ -80,5 +80,5 @@ trait-description-Vampirism =
     Your body has evolved to be able to suck blood from beings that contain it and metabolize it into useful compounds.
     You cannot eat normal food, but drinking blood satiates your hunger and thirst, and also improves your health.
 bloodsucker-wipe-marks-verb = Erase Bitemarks
-trait-name-Vampirism = Hollow Fangs
-trait-description-Vampirism = Whether through implantation, genetic modification, or evolution, you have a pair of hollow, sharp fangs used to drink iron-based blood from the beings that contain it.
+trait-name-vamplite= Hollow Fangs
+trait-description-vamplite = Whether through implantation, genetic modification, or evolution, you have a pair of hollow, sharp fangs used to drink iron-based blood from the beings that contain it.
