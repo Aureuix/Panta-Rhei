@@ -1,7 +1,7 @@
 using Content.Server.Body.Components;
 using Content.Server.Floofstation.Traits.Components;
 using Content.Server._Floof.Vampire;
-using Content.Server.Vampiric;
+using Content.Server._Floof.Vampire;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
 
