@@ -523,7 +523,9 @@
   name: trait-name-Vampirism
   description: trait-description-Vampirism
   category: Skills
-  cost: 4
+  cost: 1 
+  conflicts:
+    - VampirismLite
   conditions:
   - !type:OneOfSpeciesCondition
     invert: true
@@ -541,3 +543,22 @@
           - Crayon
           - Paper
         isSpecialDigestibleExclusive: true  
+
+- type: trait
+  id: VampirismLite
+  name: trait-name-vamplite
+  description: trait-description-vamplite
+  category: Skills
+  cost: 3
+  conflicts:
+    - Vampirism
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+      - type: Vampirism
+        succDelay: 3
