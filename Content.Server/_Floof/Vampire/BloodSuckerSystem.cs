@@ -23,7 +23,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Vampiric
+namespace Content.Server._Floof.Vampire
 {
     public sealed partial class BloodSuckerSystem : EntitySystem
     {

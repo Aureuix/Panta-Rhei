@@ -3,7 +3,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
 
-namespace Content.Server.Vampiric
+namespace Content.Server._Floof.Vampire
 {
     [RegisterComponent]
     public sealed partial class BloodSuckerComponent : Component
