@@ -16,23 +16,6 @@
   - WhiteTurtleneckJumpskirt
 
 - type: loadoutGroup
-  id: EuphoriaParamedJumpsuit
-  abstract: true
-  loadouts:
-  - MedicalApronJumpsuit
-  - MedicalApronJumpskirt
-  - MedicalOffsetJumpsuit
-  - MedicalOffsetJumpskirt
-  - MedicalVestJumpsuit
-  - MedicalVestJumpskirt
-  - BlueTurtleneckJumpsuit
-  - BlueTurtleneckJumpskirt
-  - DarkBlueTurtleneckJumpsuit
-  - DarkBlueTurtleneckJumpskirt
-  - WhiteTurtleneckJumpsuit
-  - WhiteTurtleneckJumpskirt
-
-- type: loadoutGroup
   id: EuphoriaPsychJumpsuit
   abstract: true
   loadouts:
