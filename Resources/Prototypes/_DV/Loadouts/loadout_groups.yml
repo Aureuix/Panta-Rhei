@@ -676,7 +676,21 @@
   - MedicalPinkScrubs
   - MedicalWhiteScrubs
   - MedicalRainbowScrubs
-
+  # Euphoria - DV Medical Clothing Overhaul
+  - MedicalApronJumpsuit
+  - MedicalApronJumpskirt
+  - MedicalOffsetJumpsuit
+  - MedicalOffsetJumpskirt
+  - MedicalVestJumpsuit
+  - MedicalVestJumpskirt
+  - BlueTurtleneckJumpsuit
+  - BlueTurtleneckJumpskirt
+  - DarkBlueTurtleneckJumpsuit
+  - DarkBlueTurtleneckJumpskirt
+  - WhiteTurtleneckJumpsuit
+  - WhiteTurtleneckJumpskirt
+   # Euphoria - DV Medical Clothing Overhaul
+   # Euphoria: Let people have fun with clothing. Its all medical dept clothes anyway
 - type: loadoutGroup
   id: SurgeonMask
   name: loadout-group-surgeon-mask
