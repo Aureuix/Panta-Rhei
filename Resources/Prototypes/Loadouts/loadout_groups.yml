@@ -2004,28 +2004,13 @@
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
-  parent: [FloofParamedJumpsuit, FloofJumpsuits] # Floofstation
+  parent: [FloofParamedJumpsuit, FloofJumpsuits, EuphoriaParamedJumpsuit] # Floofstation
   name: loadout-group-paramedic-jumpsuit
   loadouts:
   - ParamedicJumpsuit
   - ParamedicJumpskirt
   - ParamedicJumpSuitJumper # DeltaV - Medical Clothing Overhaul
   - ParamedicJumpSkirtJumper # DeltaV - Medical Clothing Overhaul
-    # Euphoria - DV Medical Clothing Overhaul
-  - MedicalApronJumpsuit
-  - MedicalApronJumpskirt
-  - MedicalOffsetJumpsuit
-  - MedicalOffsetJumpskirt
-  - MedicalVestJumpsuit
-  - MedicalVestJumpskirt
-  - BlueTurtleneckJumpsuit
-  - BlueTurtleneckJumpskirt
-  - DarkBlueTurtleneckJumpsuit
-  - DarkBlueTurtleneckJumpskirt
-  - WhiteTurtleneckJumpsuit
-  - WhiteTurtleneckJumpskirt
-   # Euphoria - DV Medical Clothing Overhaul
-   # Euphoria: Let people have fun with clothing. Its all medical dept clothes anyway
 - type: loadoutGroup
   id: ParamedicOuterClothing
   parent: [FloofMedicalOuterClothing, FloofOuterClothing] # Floofstation
@@ -2101,7 +2086,7 @@
 
 - type: loadoutGroup
   id: PsychologistJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofJumpsuits, EuphoriaPsychJumpsuit] # Floofstation
   name: loadout-group-psychologist-jumpsuit
   loadouts:
   - PsychologistJumpsuit
@@ -2116,12 +2101,6 @@
   - WhiteTurtleneckJumpsuit
   - WhiteTurtleneckJumpskirt
   # End DeltaV Additions
-  # Euphoria: DV medical overhaul. Let people have cool clothes.
-  - MedicalApronJumpsuit
-  - MedicalApronJumpskirt
-  - MedicalOffsetJumpsuit
-  - MedicalOffsetJumpskirt
-  # End euphoria.
 - type: loadoutGroup
   id: PsychologistJobTrinkets
   name: loadout-group-jobtrinkets
