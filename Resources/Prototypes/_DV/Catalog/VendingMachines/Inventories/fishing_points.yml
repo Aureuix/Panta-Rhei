@@ -23,19 +23,19 @@
     cost: 50
   - id: DrinkBeerCan
     cost: 10
-  - id: DrinkBeerBottleFull # Floofstation - give a full bottle beer not an empty one
+  - id: DrinkBeerBottleFull
     cost: 10
   - id: FoodTacoFish
     cost: 30
   - id: FoodBurgerCarp
     cost: 30
   - id: FoodMealSashimi
-    cost: 40
+    cost: 20
 # Floofstation fishing vendor additions start
   - id: FoodFishFrySalmon
-    cost: 40
+    cost: 30
   - id: FoodCalamariPlater
-    cost: 50
+    cost: 40
   - id: FoodFlatBreadArmorFish
-    cost: 50
+    cost: 40
 # Floofstation fishing vendor additions end

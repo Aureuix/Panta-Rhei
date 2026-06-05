@@ -18,15 +18,17 @@
     - Oni
     - Rodentia
     - Chitinid
-    - IPC
     - Feroxi
     - Kitsune
     - Avali
     # ImpStation additions
     - Thaven
     # Den addition
-    # Euphoria addition
+    - Ovinia
+    # Floof section
     - Tajaran
+    - IPC
+    # Floof section end
 
 - type: guideEntry
   id: Arachnid
@@ -68,7 +70,7 @@
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
 
-- type: guideEntry
+- type: guideEntry # Floof - preserved
   id: IPC
   name: species-name-ipc
   text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"

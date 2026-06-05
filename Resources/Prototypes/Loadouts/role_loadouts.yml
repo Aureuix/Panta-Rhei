@@ -463,6 +463,7 @@
   - GroupSpeciesBreathToolSecurity
   - SecurityAllFirearm # DeltaV - loadouts
   - SecurityAllAmmo # DeltaV - loadouts
+  - SecurityUtility # DeltaV - loadouts
 
 - type: roleLoadout
   id: JobWarden
@@ -482,6 +483,7 @@
   - GroupSpeciesBreathToolSecurity
   - SecurityAllFirearm # DeltaV - loadouts
   - SecurityAllAmmo # DeltaV - loadouts
+  - SecurityUtility # DeltaV - loadouts
 
 - type: roleLoadout
   id: JobSecurityOfficer
@@ -502,6 +504,7 @@
   - GroupSpeciesBreathToolSecurity
   - SecurityFirearm # DeltaV - loadouts
   - SecurityFirearmAmmo # DeltaV - loadouts
+  - SecurityUtility # DeltaV - loadouts
 
 - type: roleLoadout
   id: JobDetective
@@ -525,7 +528,7 @@
   id: JobSecurityCadet
   parent: JobBaseLoadout # Floofstation
   groups:
-  - SecurityHead # DeltaV
+  - SecurityCadetHead # DeltaV
   - SecurityNeck # DeltaV
   - SecurityGloves # DeltaV - Security can start with gloves
   - SecurityCadetJumpsuit

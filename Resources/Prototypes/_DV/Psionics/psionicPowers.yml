@@ -22,10 +22,9 @@
     - id: NoosphericZapPowerEntity
       weight: 0.3
     - id: MindSwapPowerEntity
-      weight: 0.3
-    # Floofstation - no.
-#    - id: PsionicEruptionPowerEntity
-#      weight: 0.1
+      weight: 0.3 # Floof - to compensate
+    #- id: PsionicEruptionPowerEntity
+    #  weight: 0.1
 
 # Powers
 - type: entity

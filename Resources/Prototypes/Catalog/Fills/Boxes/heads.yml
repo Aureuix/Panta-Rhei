@@ -42,8 +42,6 @@
         - id: MedicalTechFabCircuitboard
         - id: CargoRequestMedicalComputerCircuitboard
         - id: IDComputerCircuitboard # DeltaV
-        - id: MedicalBiofabMachineBoard # DeltaV
-        - id: AutoclaveMachineCircuitboard # DeltaV
         - id: MedicalRecordsComputerCircuitboard # Euphoria
         - id: CrewMonitoringComputerCircuitboard # Euphoria
 
