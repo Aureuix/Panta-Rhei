@@ -55,5 +55,12 @@
 - type: Tag
   id: MailCapsule
 
+# Floof port
+- type: Tag
+  id: NFEmptyMedipen
+
+- type: Tag
+  id: NFHotdog
+
 - type: Tag
   id: MaterialHideRosyMothroach

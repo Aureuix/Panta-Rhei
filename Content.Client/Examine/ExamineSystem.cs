@@ -1,6 +1,8 @@
 using System.Linq;
 using System.Numerics;
 using System.Threading;
+using Content.Client._Floof.Language.RichText;
+using Content.Client.UserInterface.RichText;
 using Content.Client.Verbs;
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
@@ -14,6 +16,7 @@ using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Client.UserInterface.RichText;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
 using Robust.Shared.Utility;
@@ -35,6 +38,19 @@ namespace Content.Client.Examine
         private List<Verb> _verbList = new();
 
         public const string StyleClassEntityTooltip = "entity-tooltip";
+        // Floof
+        private static readonly Type[] AllowedTags = [
+            // Wow RichTextEntry is internal
+            // Like I don't have the words to describe how stupid that is
+            typeof(BoldItalicTag),
+            typeof(BoldTag),
+            typeof(BulletTag),
+            typeof(ColorTag),
+            typeof(HeadingTag),
+            typeof(ItalicTag),
+            typeof(LanguageMarkupTag), // Added
+            typeof(ScrambleTag), // Added
+        ];
 
         private EntityUid _examinedEntity;
         private Popup? _examineTooltipOpen;
@@ -279,7 +295,7 @@ namespace Content.Client.Examine
                     continue;
 
                 var richLabel = new RichTextLabel() { Margin = new Thickness(4, 4, 0, 4)};
-                richLabel.SetMessage(message);
+                richLabel.SetMessage(message, AllowedTags);
                 vBox.AddChild(richLabel);
                 break;
             }
