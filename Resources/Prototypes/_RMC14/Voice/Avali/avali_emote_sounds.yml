@@ -57,8 +57,6 @@
       collection: ResomiCalls
     Squawk:
       collection: ResomiSquawk
-    Chirp:
-      collection: ResomiChirp
   #Starlight end
 - type: emoteSounds
   #parent: [RMCUnisexAvali, RMCFemaleHuman] # DeltaV - no inheritence
@@ -110,6 +108,4 @@
       collection: ResomiCalls
     Squawk:
       collection: ResomiSquawk
-    Chirp:
-      collection: ResomiChirp
   #Starlight end
