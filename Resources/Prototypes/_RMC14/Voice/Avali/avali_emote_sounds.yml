@@ -43,19 +43,17 @@
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
   # End DeltaV Additions
   #Starlight start
-    Hisses:
-      collection: FelinidHisses
     Purr:
       collection: FelinidPurrs  
     Growl:
       collection: FelinidGrowls
-    Trill:
+    FelineTrill:
       collection: FelineTrills
     Scree:
       collection: ResomiScrees
     Call:
       collection: ResomiCalls
-    Squawk:
+    HarpySquawk:
       collection: ResomiSquawk
   #Starlight end
 - type: emoteSounds
@@ -94,13 +92,11 @@
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
   # End DeltaV Additions
   #Starlight start
-    Hisses:
-      collection: FelinidHisses
     Purr:
       collection: FelinidPurrs  
     Growl:
       collection: FelinidGrowls
-    Trill:
+    FelineTrill:
       collection: FelineTrills
     Scree:
       collection: ResomiScrees
