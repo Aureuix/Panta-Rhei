@@ -95,13 +95,13 @@
   # End DeltaV Additions
   #Starlight start
     Hisses:
-      collection: FelionoidHisses
+      collection: FelinidHisses
     Purr:
-      collection: FelionoidPurrs
+      collection: FelinidPurrs  
     Growl:
-      collection: FelionoidGrowls
+      collection: FelinidGrowls
     Trill:
-      collection: FelionoidTrills
+      collection: FelineTrills
     Scree:
       collection: ResomiScrees
     Call:
