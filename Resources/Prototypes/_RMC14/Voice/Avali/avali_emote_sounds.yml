@@ -30,9 +30,9 @@
     Sigh:
       collection: MaleSigh
     Crying:
-      collection: MaleCry
+      path: /Audio/_Starlight/Voice/Avali/avali_cry.ogg # Starlight
     Whistle:
-      collection: Whistles
+      path: /Audio/_Starlight/Voice/Resomi/resomi_whistle.ogg # Starlight
     Weh:
       collection: Weh
     Gasp:
@@ -42,7 +42,30 @@
     Gulp: # Goob
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
   # End DeltaV Additions
-
+  #Starlight start
+    Hisses:
+      collection: FelinidHisses
+    Purr:
+      collection: FelinidPurrs  
+    Growl:
+      collection: FelinidGrowls
+    Trill:
+      collection: FelineTrills
+    Scree:
+      collection: ResomiScrees
+    Call:
+      collection: ResomiCalls
+    Squawk:
+      collection: ResomiSquawk
+    Chirp:
+      collection: ResomiChirp
+  #Starlight end
+  #Euphoria start
+    HarpyCaw:
+      collection: HarpyCaws
+    Coo:
+      collection: HarpyCoos
+  #Euphoria end
 - type: emoteSounds
   #parent: [RMCUnisexAvali, RMCFemaleHuman] # DeltaV - no inheritence
   id: RMCFemaleAvali
@@ -66,9 +89,9 @@
     Sigh:
       collection: FemaleSigh
     Crying:
-      collection: FemaleCry
+      path: /Audio/_Starlight/Voice/Avali/avali_cry.ogg # Starlight
     Whistle:
-      collection: Whistles
+      path: /Audio/_Starlight/Voice/Resomi/resomi_whistle.ogg # Starlight
     Weh:
       collection: Weh
     Gasp:
@@ -78,3 +101,27 @@
     Gulp: # Goob
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
   # End DeltaV Additions
+  #Starlight start
+    Hisses:
+      collection: FelionoidHisses
+    Purr:
+      collection: FelionoidPurrs
+    Growl:
+      collection: FelionoidGrowls
+    Trill:
+      collection: FelionoidTrills
+    Scree:
+      collection: ResomiScrees
+    Call:
+      collection: ResomiCalls
+    Squawk:
+      collection: ResomiSquawk
+    Chirp:
+      collection: ResomiChirp
+  #Starlight end
+  #Euphoria start
+    HarpyCaw:
+      collection: HarpyCaws
+    Coo:
+      collection: HarpyCoos
+  #Euphoria end

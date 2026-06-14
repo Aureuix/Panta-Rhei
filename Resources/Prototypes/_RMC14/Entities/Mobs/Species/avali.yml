@@ -29,6 +29,7 @@
   - type: Speech
     speechVerb: Parrot # Didn't come with one
     speechSounds: MaleAvali
+    allowedEmotes: ['Chirp', 'Hisses', 'Purr', 'Growl', 'Trill', 'Scree', 'Call', 'Squawk', 'HarpyCaw', 'Coo']
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
