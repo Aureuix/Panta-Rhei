@@ -133,7 +133,6 @@
     - DoorBumpOpener
     - AnomalyHost
     - ResomiEmotes
-    - AvaliResomiEmotes
 #euph emote tags
 - type: entity
   parent: BaseSpeciesDummy
