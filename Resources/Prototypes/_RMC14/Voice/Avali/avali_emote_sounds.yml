@@ -60,12 +60,6 @@
     Chirp:
       collection: ResomiChirp
   #Starlight end
-  #Euphoria start
-    HarpyCaw:
-      collection: HarpyCaws
-    Coo:
-      collection: HarpyCoos
-  #Euphoria end
 - type: emoteSounds
   #parent: [RMCUnisexAvali, RMCFemaleHuman] # DeltaV - no inheritence
   id: RMCFemaleAvali
@@ -119,9 +113,3 @@
     Chirp:
       collection: ResomiChirp
   #Starlight end
-  #Euphoria start
-    HarpyCaw:
-      collection: HarpyCaws
-    Coo:
-      collection: HarpyCoos
-  #Euphoria end
