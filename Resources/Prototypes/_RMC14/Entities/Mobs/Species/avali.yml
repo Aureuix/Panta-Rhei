@@ -29,7 +29,7 @@
   - type: Speech
     speechVerb: Parrot # Didn't come with one
     speechSounds: MaleAvali
-    allowedEmotes: ['Chirp', 'Hisses', 'Purr', 'Growl', 'Trill', 'Scree', 'Call', 'Squawk', 'HarpyCaw', 'Coo']
+    allowedEmotes: ['Chirp', 'Hisses', 'Purr', 'Growl', 'HarpySquawk', 'HarpyCaw', 'Coo']
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -125,7 +125,16 @@
       265: 0.9
       240: 0.85
   # End DeltaV additions
-
+  #euph Emote tags
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost
+    - ResomiEmotes
+    - AvaliResomiEmotes
+#euph emote tags
 - type: entity
   parent: BaseSpeciesDummy
   id: MobAvaliDummy
