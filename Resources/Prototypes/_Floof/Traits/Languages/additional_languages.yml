@@ -88,7 +88,7 @@
   description: trait-FoxLanguage-desc
   category: Languages
   cost: 1
-  #conditions: Euphoria, removing language species reqs to allow for better roleplay and creation of custom species.
+  #conditions:
   #- !type:OneOfSpeciesCondition
   #  species:
   #  - Vulpkanin
@@ -107,7 +107,7 @@
   category: Languages
   cost: 1
   #conditions:
-  #- !type:OneOfSpeciesCondition Euphoria, removing language species reqs to allow for better roleplay and creation of custom species.
+  #- !type:OneOfSpeciesCondition 
   #  species: [Vulpkanin]
   effects:
   - !type:ModifyLanguagesTraitEffect
@@ -123,7 +123,7 @@
   description: trait-CatLanguage-desc
   category: Languages
   cost: 1
-  #conditions: Euphoria, removing language species reqs to allow for better roleplay and creation of custom species.
+  #conditions: 
   #- !type:OneOfSpeciesCondition
     #species:
     #- Felinid
@@ -142,7 +142,7 @@
   description: trait-MonkeyLanguage-desc
   category: Languages
   cost: 1
-  #conditions: Euphoria, removing language species reqs to allow for better roleplay and creation of custom species.
+  #conditions: 
   #- !type:OneOfSpeciesCondition
   #  species:
   #  - Human
@@ -161,7 +161,7 @@
   description: trait-KoboldLanguage-desc
   category: Languages
   cost: 1
-  #conditions: Euphoria, removing language species reqs to allow for better roleplay and creation of custom species.
+  #conditions: 
   #- !type:OneOfSpeciesCondition
   #  species:
   #  - Human
