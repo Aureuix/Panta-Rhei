@@ -1,0 +1,10 @@
+- type: trait
+  id: Tail Wag
+  name: trait-name-TailWag
+  description: trait-description-TailWag
+  category: BonusPhysical
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
+      - type: Wagging
