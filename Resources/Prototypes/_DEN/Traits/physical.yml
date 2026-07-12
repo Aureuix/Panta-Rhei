@@ -1,5 +1,5 @@
 - type: trait
-  id: Tail Wag
+  id: TailWag
   name: trait-name-TailWag
   description: trait-description-TailWag
   category: BonusPhysical
