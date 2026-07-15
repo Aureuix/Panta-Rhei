@@ -4292,3 +4292,97 @@ Entries:
       message: Fixed Behonker being deleted on dispel.
   id: 532
   time: '2026-07-12T09:10:25.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Unrevivable IPCs are now actually unrevivable.
+  id: 533
+  time: '2026-07-13T06:18:00.0000000+00:00'
+- author: ScarlettJFG
+  changes:
+    - type: Remove
+      message: >-
+        Temporarily removed the ability for slimes to have different hair color.
+        (Fix being worked on)
+  id: 534
+  time: '2026-07-13T06:37:12.0000000+00:00'
+- author: DuskyJay
+  changes:
+    - type: Tweak
+      message: >-
+        Translators can now be used from the PDA slot for people who use their
+        collar as ID!
+  id: 535
+  time: '2026-07-13T06:40:12.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Sacrificing a psionic at the altar now reduces glimmer by 300 to 400
+        (was 30 to 60).
+  id: 536
+  time: '2026-07-13T06:41:58.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Adds a Service SmartFridge for mappers.
+    - type: Add
+      message: >-
+        Service SmartFridge machineboard can be found in the circuit imprinter
+        and service techfab on round start.
+    - type: Tweak
+      message: >-
+        Medical Pens are cheaper to produce and now can be put into Medical
+        smart fridges.
+  id: 537
+  time: '2026-07-13T06:44:19.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        The Casino random event shuttle now has a mini gravity generator and a
+        few more things have been fixed.
+  id: 538
+  time: '2026-07-13T06:45:23.0000000+00:00'
+- author: SlowVelcro
+  changes:
+    - type: Fix
+      message: >-
+        Fixed thaven species-specific sprites not being used when worn by
+        thavens.
+  id: 539
+  time: '2026-07-13T06:46:25.0000000+00:00'
+- author: TheRedForestButcher
+  changes:
+    - type: Tweak
+      message: Updated Tortuga with new dorms and an alternative power source.
+    - type: Tweak
+      message: Torgua now has a full justice roles and a security technician job slot.
+  id: 540
+  time: '2026-07-13T14:13:29.0000000+00:00'
+- author: WhiteLightningTwister
+  changes:
+    - type: Add
+      message: >-
+        Added CJ, Prosec offices. Improved librarian office, dorms got expanded,
+        likewise docks and many more changes.
+    - type: Tweak
+      message: Asterisk is no longer on the ground, its in low orbit.
+    - type: Remove
+      message: No more firing range in Asterisk's sec department.
+  id: 541
+  time: '2026-07-13T14:28:27.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Pressing a fire alarm will make fire locks activate again.
+  id: 542
+  time: '2026-07-14T10:58:24.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Add
+      message: Added religious head and neck wear.
+    - type: Fix
+      message: Roles missing head and/or neck options have them now.
+  id: 543
+  time: '2026-07-14T10:59:26.0000000+00:00'

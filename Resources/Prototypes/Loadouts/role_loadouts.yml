@@ -142,6 +142,7 @@
   id: JobLibrarian
   parent: JobBaseLoadout # Floofstation
   groups:
+  - AssistantHead # Euphoria
   - LibrarianNeck # DeltaV
   - GroupTankHarness
   - LibrarianJumpsuit
@@ -160,6 +161,7 @@
   parent: JobBaseLoadout # Floofstation
   groups:
   - GroupTankHarness
+  - AssistantHead # Euphoria
   - LawyerNeck
   - LawyerJumpsuit
   - PassengerShoes # Floofstation -  this job dosent get to pick shoes for some reason
@@ -243,6 +245,7 @@
   - GroupTankHarness
   - ClownHead
   - ClownMask # DeltaV
+  - PassengerNeck # Euphoria
   - Scarfs # DeltaV
   - ClownJumpsuit
   - ClownBackpack
@@ -278,6 +281,7 @@
   parent: JobBaseLoadout # Floofstation
   groups:
   - GroupTankHarness
+  - AssistantHead # Euphoria
   - MusicianJumpsuit
   - MusicianNeck
   - CommonBackpack
@@ -341,6 +345,7 @@
   id: JobSalvageSpecialist
   parent: JobBaseLoadout # Floofstation
   groups:
+  - AssistantHead # Euphoria
   - SalvageSpecialistNeck # DeltaV
   - SalvageSpecialistJumpsuit # DeltaV - more jumpskirts
   - GroupTankHarness
@@ -764,12 +769,13 @@
   parent: JobBaseLoadout # Floofstation
   groups:
   - GroupTankHarness
+  - PsychologistHead # Euphoria | Moved for order
+  - MedicalDoctorNeck # Euphoria
   - PsychologistJumpsuit
   - MedicalBackpack
   # Begin DeltaV additions
   - SurvivalMedical # Replaces Survival
   - PsychologistPDADelta
-  - PsychologistHead
   - Scarfs
   - PsychologistOuterClothing
   - PsychologistShoes

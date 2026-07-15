@@ -1105,6 +1105,27 @@
   equipment:
     head: ClothingHeadHatCorpsoft
 
+- type: loadout
+  id: ClothingHeadHatHijabColorable
+  equipment:
+    head: ClothingHeadHatHijabColorable
+  groupBy: "religious"
+
+
+- type: loadout
+  id: ClothingHeadHatTurbanColorable
+  equipment:
+    head: ClothingHeadHatTurbanColorable
+  groupBy: "religious"
+
+
+- type: loadout
+  id: ClothingHeadHatKippahColorable
+  equipment:
+    head: ClothingHeadHatKippahColorable
+  groupBy: "religious"
+
+
 #neck
 - type: loadout
   id: MothCloak
@@ -1262,6 +1283,55 @@
   id: ClothingNeckCWPArctic
   equipment:
     neck: ClothingNeckCWPArctic
+
+- type: loadout
+  id: ClothingNeckCrucifixColor
+  equipment:
+    neck: ClothingNeckCrucifixColor
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixColorSaintPeter
+  equipment:
+    neck: ClothingNeckCrucifixColorSaintPeter
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixGold
+  equipment:
+    neck: ClothingNeckCrucifixGold
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixGoldSaintPeter
+  equipment:
+    neck: ClothingNeckCrucifixGoldSaintPeter
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixSilver
+  equipment:
+    neck: ClothingNeckCrucifixSilver
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckCrucifixSilverSaintPeter
+  equipment:
+    neck: ClothingNeckCrucifixSilverSaintPeter
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckScapular
+  equipment:
+    neck: ClothingNeckScapular
+  groupBy: "religious"
+
+- type: loadout
+  id: ClothingNeckTallit
+  equipment:
+    neck: ClothingNeckTallit
+  groupBy: "religious"
+
 
 # trinkets
 - type: loadout
@@ -1922,3 +1992,4 @@
   equipment:
     undergarmentSocks: ClothingUnderSocksFishnets
   groupBy: "thigh highs"
+
