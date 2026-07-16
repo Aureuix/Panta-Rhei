@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Body parts by @Kilath | bunnytailalt taken from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e modified by Skubman, bunny tail animated by Aikakakah",
+    "copyright": "Body parts by @Kilath | bunnytailalt taken from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e modified by Skubman",
     "size": {
         "x": 32,
         "y": 32
@@ -10,11 +10,6 @@
         {
             "name": "bunnytail",
             "directions": 4
-        },
-        {
-            "name": "bunnytail_wag",
-            "directions": 4,
-            "delays": [[0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1], [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1], [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1], [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]]
         },
         {
             "name": "bunnytailalt",
