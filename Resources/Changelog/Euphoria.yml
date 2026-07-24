@@ -4596,3 +4596,19 @@ Entries:
       message: A few mitten options have been added to the gloves section of loadouts.
   id: 572
   time: '2026-07-24T22:45:56.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Tweak
+      message: >-
+        Skipped preloading unneeded lobby arts to save a significant portion of
+        VRAM.
+    - type: Tweak
+      message: >-
+        Shrunk Ratvar in the wash to halve his size so he doesn't take up 36MB
+        VRAM.
+    - type: Remove
+      message: >-
+        The Cosmic Cult pocket dimension is no longer loaded on non-CosCult
+        rounds.
+  id: 573
+  time: '2026-07-24T23:04:24.0000000+00:00'
