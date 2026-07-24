@@ -4612,3 +4612,9 @@ Entries:
         rounds.
   id: 573
   time: '2026-07-24T23:04:24.0000000+00:00'
+- author: JustABugZero
+  changes:
+    - type: Remove
+      message: Removed Vox color restriction
+  id: 574
+  time: '2026-07-24T23:07:37.0000000+00:00'
