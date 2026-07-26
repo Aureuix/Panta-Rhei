@@ -47,3 +47,6 @@
 - type: Tag
   id: MedicalMisc # Storage whitelist: Medical Belt and Medkits
 
+# casino chips
+- type: Tag
+  id: CasinoChips

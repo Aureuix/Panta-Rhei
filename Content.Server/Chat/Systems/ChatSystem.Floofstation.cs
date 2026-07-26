@@ -20,7 +20,6 @@ namespace Content.Server.Chat.Systems;
 /// </summary>
 public sealed partial class ChatSystem
 {
-    [Dependency] private readonly LanguageSystem _languages = default!;
     [Dependency] private readonly SharedPopupSystem _popups = default!;
     [Dependency] private readonly HandsSystem _hands = default!;
 
@@ -152,7 +151,7 @@ public sealed partial class ChatSystem
             ("fontSize", fontSize),
             ("textColor", fontColor), // Notice it's $textColor instead of $color
             ("message", FormattedMessage.EscapeText(message)),
-            ("language", LanguageNameForFluent(language)));
+            ("language", language.ID));
 
         var obfuscated = _languages.ObfuscateSpeech(message, language);
         var wrappedObfuscatedMessage = Loc.GetString(locId,
@@ -162,7 +161,7 @@ public sealed partial class ChatSystem
             ("fontSize", fontSize),
             ("textColor", fontColor), // Notice it's $textColor instead of $color
             ("message", FormattedMessage.EscapeText(obfuscated)),
-            ("language", LanguageNameForFluent(language)));
+            ("language", language.ID));
 
         return (new(message, wrappedMessage, language), new(obfuscated, wrappedObfuscatedMessage, language));
     }
@@ -189,7 +188,7 @@ public sealed partial class ChatSystem
             ("entityName", name),
             ("message", finalMsg),
             ("textColor", fontColor), // Notice it's $textColor instead of $color
-            ("language", LanguageNameForFluent(language)));
+            ("language", language.ID));
 
         return new(finalMsg, wrappedMessage, language);
     }
@@ -202,7 +201,7 @@ public sealed partial class ChatSystem
     {
         if (language is not { IsVisibleLanguage: true })
             return "null"; // For use in Fluent case matching
-        return language.ChatName;
+        return language.Name;
     }
 
     public static void ExtractSpeechInfo(SpeechVerbPrototype speechProto,

@@ -164,6 +164,9 @@
     # Floofstation section
     - CollarsAutolatheFloofstation
     # Floofstation section end
+    # Den section
+    - NSFWHolos
+    # Den section end
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
@@ -293,6 +296,7 @@
     - CargoBoardsStatic
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
+    - FloofstationServiceCircuitBoards # service smartfridge
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards
@@ -351,6 +355,7 @@
     - BorgLimbsStatic
     - BorgDVModulesStatic # DeltaV - modules
     - BorgIdentificationStaticDeltaV # DeltaV - Borg IDs
+    - BorgModulesStaticEuphoria # Euphoria
     dynamicPacks:
     - Robotics
     - BorgModules
@@ -358,6 +363,7 @@
     - MechEquipment
     - RoboticsDeltaV # DeltaV
     - BorgModulesServiceDynamicDV # DeltaV
+    - BorgModulesEuphoria # Euphoria
   - type: EmagLatheRecipes # DeltaV
     emagStaticPacks:
     - RoboticsEmagStatic

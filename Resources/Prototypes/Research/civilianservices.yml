@@ -15,6 +15,7 @@
   - HydroponicsTrayMachineCircuitboard
   - ReagentGrinderIndustrialMachineCircuitboard
   - BorgModuleAdvancedBotany # DeltaV
+  - MilkingMachineCircuitboard # Euphoria
 
 - type: technology
   id: CritterMechs
@@ -81,6 +82,7 @@
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
     - JukeboxCircuitBoard
+    - BorgModuleFoamForce # Euphoria Addition
     - BorgModuleDJ # DeltaV
 
 - type: technology

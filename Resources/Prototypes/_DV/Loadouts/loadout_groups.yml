@@ -36,7 +36,7 @@
 
 - type: loadoutGroup
   id: BartenderNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-bartender-neck
   minLimit: 0
   loadouts:
@@ -46,7 +46,7 @@
 ## Librarian
 - type: loadoutGroup
   id: LibrarianNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-librarian-neck
   minLimit: 0
   loadouts:
@@ -56,7 +56,7 @@
 ## Janitor
 - type: loadoutGroup
   id: JanitorNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-janitor-neck
   minLimit: 0
   loadouts:
@@ -65,7 +65,7 @@
 ## Botanist
 - type: loadoutGroup
   id: BotanistNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-botanist-neck
   minLimit: 0
   loadouts:
@@ -83,7 +83,7 @@
 ## Mime
 - type: loadoutGroup
   id: MimeNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-mime-neck
   minLimit: 0
   loadouts:
@@ -93,7 +93,7 @@
 ## Musician
 - type: loadoutGroup
   id: MusicianNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-musician-neck
   minLimit: 0
   loadouts:
@@ -152,7 +152,7 @@
 
 - type: loadoutGroup
   id: CourierNeck
-  parent: [CargoTechnicianNeck] # Floofstation
+  parent: [FloofNeck, CargoTechnicianNeck] # Floofstation
   name: loadout-group-courier-neck
   minLimit: 0
   loadouts:
@@ -199,6 +199,7 @@
 
 - type: loadoutGroup
   id: CourierPDA
+  parent: FloofCourierPda # Floofstation pda
   name: loadout-group-courier-id
   loadouts:
   - CourierPDA
@@ -207,7 +208,7 @@
 ## Cargo Assistant
 - type: loadoutGroup
   id: CargoAssistantHead
-  parent: [FloofHats] # floofstation
+  parent: [FloofCargotechHats, FloofHats] # floofstation
   name: loadout-group-cargo-assistant-head
   minLimit: 0
   loadouts:
@@ -223,7 +224,7 @@
 
 - type: loadoutGroup
   id: CargoAssistantBackpack
-  parent: [FloofBackpacks] # Floofstation
+  parent: [FloofCargoTechBags, FloofBackpacks] # Floofstation
   name: loadout-group-cargo-assistant-backpack
   loadouts:
   - CargoTechnicianBackpack
@@ -249,7 +250,7 @@
 ## Cargo Technician
 - type: loadoutGroup
   id: CargoTechnicianNeck
-  parent: [CargoCollars] # Floofstation
+  parent: [FloofNeck, FloofCargotechNeck, CargoCollars] # Floofstation
   name: loadout-group-cargo-technician-neck
   minLimit: 0
   loadouts:
@@ -258,7 +259,7 @@
 ## Salvage Specialist
 - type: loadoutGroup
   id: SalvageSpecialistNeck
-  parent: [CargoCollars] # Floofstation
+  parent: [FloofNeck, CargoCollars] # Floofstation
   name: loadout-group-salvage-specialist-neck
   minLimit: 0
   loadouts:
@@ -288,7 +289,7 @@
 
 - type: loadoutGroup
   id: BrigMedicNeck
-  parent: [SecurityCollars] # Floofstation
+  parent: [FloofNeck, SecurityCollars] # Floofstation
   name: loadout-group-brig-medic-neck
   minLimit: 0
   loadouts:
@@ -499,7 +500,7 @@
 ## Security Officer
 - type: loadoutGroup
   id: SecurityNeck
-  parent: [SecurityCollars] # Floofstation
+  parent: [FloofNeck, SecurityCollars] # Floofstation
   name: loadout-group-security-neck
   minLimit: 0
   loadouts:
@@ -618,7 +619,7 @@
 ## Medical Doctor
 - type: loadoutGroup
   id: MedicalDoctorNeck
-  parent: [MedicalCollars] # Floofstation
+  parent: [FloofNeck, MedicalCollars] # Floofstation
   name: loadout-group-medical-doctor-neck
   minLimit: 0
   loadouts:
@@ -630,6 +631,7 @@
 
 - type: loadoutGroup
   id: ChemistHead
+  parent: [FloofHats] # Euphoria
   name: loadout-group-chemist-head
   minLimit: 0
   loadouts:
@@ -639,7 +641,7 @@
 
 - type: loadoutGroup
   id: ChemistNeck
-  parent: [MedicalCollars] # Floofstation
+  parent: [FloofNeck, MedicalCollars] # Floofstation
   name: loadout-group-chemist-neck
   minLimit: 0
   loadouts:
@@ -660,7 +662,7 @@
 
 - type: loadoutGroup
   id: ChemistShoes
-  parent: [FloofChemistShoes, FloofShoes] # Floofstation
+  parent: [FloofShoes] # Floofstation
   name: loadout-group-chemist-shoes
   loadouts:
   - WhiteShoes
@@ -714,6 +716,7 @@
 
 - type: loadoutGroup
   id: SurgeonPDA
+  parent: FloofMedicalSurgeonPDAs # Floofstation
   name: loadout-group-surgeon-id
   loadouts:
   - SurgeonPDA
@@ -741,7 +744,7 @@
 
 - type: loadoutGroup
   id: ChiefJusticeNeck
-  parent: [ClerkNeck] # Floofstation
+  parent: [FloofNeck, ClerkNeck] # Floofstation
   name: loadout-group-chiefjustice-neck
   minLimit: 0
   loadouts:
@@ -768,7 +771,7 @@
 ## Station Engineer
 - type: loadoutGroup
   id: StationEngineerNeck
-  parent: [EngineeringCollars] # Floofstation
+  parent: [FloofNeck, EngineeringCollars] # Floofstation
   name: loadout-group-station-engineer-neck
   minLimit: 0
   loadouts:
@@ -778,7 +781,7 @@
 ## Atmospheric Technician
 - type: loadoutGroup
   id: AtmosphericTechnicianNeck
-  parent: [EngineeringCollars] # Floofstation
+  parent: [FloofNeck, EngineeringCollars] # Floofstation
   name: loadout-group-atmospheric-technician-neck
   minLimit: 0
   loadouts:
@@ -808,7 +811,7 @@
 
 - type: loadoutGroup
   id: ClerkNeck
-  parent: [CommonCollars] # Floofstation
+  parent: [FloofNeck] # Floofstation
   name: loadout-group-clerk-neck
   minLimit: 0
   loadouts:
@@ -856,7 +859,7 @@
 
 - type: loadoutGroup
   id: ProsecutorNeck
-  parent: [ClerkNeck] # Floofstation
+  parent: [FloofNeck, ClerkNeck] # Floofstation
   name: loadout-group-prosecutor-neck
   minLimit: 0
   loadouts:
@@ -956,7 +959,7 @@
 
 - type: loadoutGroup
   id: CaptainShoes
-  parent: [FloofCaptainSocks, FloofShoes] # Floofstation
+  parent: [FloofShoes] # Floofstation
   name: loadout-group-captain-shoes
   loadouts:
   - BrownLeatherShoes
@@ -976,7 +979,7 @@
 
 - type: loadoutGroup
   id: HoPShoes
-  parent: [FloofHopSocks,FloofShoes] # Floofstation
+  parent: [FloofShoes] # Floofstation
   name: loadout-group-hop-shoes
   loadouts:
   - BrownLeatherShoes
@@ -1007,6 +1010,7 @@
 
 - type: loadoutGroup
   id: BartenderPDADelta
+  parent: FloofBartenderPda # Floofstation pda
   name: loadout-group-bartender-id-delta
   loadouts:
   - BartenderPDA
@@ -1014,6 +1018,7 @@
 
 - type: loadoutGroup
   id: ChefPDADelta
+  parent: FloofChefPdas # Floofstation pda
   name: loadout-group-chef-id-delta
   loadouts:
   - ChefPDA
@@ -1023,6 +1028,7 @@
 
 - type: loadoutGroup
   id: MedicalInternPDADelta
+  parent: FloofMedicalInternPDAs # Floofstation
   name: loadout-group-medical-intern-id-delta
   loadouts:
   - MedicalInternPDA
@@ -1031,6 +1037,7 @@
 
 - type: loadoutGroup
   id: ChemistryPDA
+  parent: FloofMedicalChemistPDAs # Floofstation
   name: loadout-group-chemist-id
   loadouts:
   - ChemistryPDA
@@ -1038,6 +1045,7 @@
 
 - type: loadoutGroup
   id: AtmosPDADelta
+  parent: FloofAtmosTechPDAs # Floofstation
   name: loadout-group-atmos-id-delta
   loadouts:
   - AtmosPDA
@@ -1046,6 +1054,7 @@
 
 - type: loadoutGroup
   id: CargoPDADelta
+  parent: FloofCargotechPda # Floofstation pda
   name: loadout-group-cargo-id-delta
   loadouts:
   - CargoPDA
@@ -1054,6 +1063,7 @@
 
 - type: loadoutGroup
   id: SalvagePDADelta
+  parent: FloofSalvagePda # Floofstation pdas
   name: loadout-group-salvage-id-delta
   loadouts:
   - SalvagePDA
@@ -1062,6 +1072,7 @@
 
 - type: loadoutGroup
   id: ClownPDADelta
+  parent: FloofClownPda # Floofpda
   name: loadout-group-clown-id-delta
   loadouts:
   - ClownPDA
@@ -1077,6 +1088,7 @@
 
 - type: loadoutGroup
   id: JanitorPDADelta
+  parent: FloofJanitorPda # Floofstation alt pdas
   name: loadout-group-janitor-id-delta
   loadouts:
   - JanitorPDA
@@ -1084,6 +1096,7 @@
 
 - type: loadoutGroup
   id: PsychologistPDADelta
+  parent: FloofMedicalPsychPDAs # Floofstation
   name: loadout-group-psychologist-id-delta
   loadouts:
   - PsychologistPDA

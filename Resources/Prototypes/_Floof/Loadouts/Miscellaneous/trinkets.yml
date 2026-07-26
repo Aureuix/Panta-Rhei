@@ -30,6 +30,20 @@
   groupBy: "Other Toys"
 
 - type: loadout
+  id: PaperPlane
+  storage:
+    back:
+    - PaperPlane
+  groupBy: "Other Toys"
+
+- type: loadout
+  id: PaperOrigamiSwan
+  storage:
+    back:
+    - PaperOrigamiSwan
+  groupBy: "Other Toys"
+
+- type: loadout
   id: CardBoxNanotrasen
   storage:
     back:
@@ -93,7 +107,28 @@
   groupBy: "Plushies"
 
 - type: loadout
+  id: CarpChewToy
+  storage:
+    back:
+    - CarpChewToy
+  groupBy: "Plushies"
+
+- type: loadout
   id: WristwatchGold
   storage:
     back:
     - WristwatchGold
+
+- type: loadout
+  id: CombBrush
+  storage:
+    back:
+    - CombBrush
+  groupBy: "Brushes"
+
+- type: loadout
+  id: HairBrush
+  storage:
+    back:
+    - HairBrush
+  groupBy: "Brushes"
