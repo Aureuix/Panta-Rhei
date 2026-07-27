@@ -52,7 +52,7 @@ namespace Content.Server.Chat.Systems;
 
 // Dear contributor. When I was introducing changes to this system only god and I knew what I was doing.
 // Now only god knows. Please don't touch this code ever again. If you do have to, increment this counter as a warning for others:
-// TOTAL_HOURS_WASTED_HERE_EE = 31
+// TOTAL_HOURS_WASTED_HERE_EE = 32
 
 // TODO refactor whatever active warzone this class and chatmanager have become
 /// <summary>
@@ -714,7 +714,8 @@ public sealed partial class ChatSystem : SharedChatSystem
             !TryEmoteChatInput(source, action))
             return;
 
-        SendInVoiceRange(ChatChannel.Emotes, action, wrappedMessage, source, range, author);
+        // Floof - supply empty message wrap data for the third arg as emotes are never obfuscated
+        SendInVoiceRange(ChatChannel.Emotes, new MessageWrapData(action, wrappedMessage, LanguageSystem.Universal), MessageWrapData.Empty, source, range, author);
         if (!hideLog)
             if (name != Name(source))
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {source} as {name}: {action}");
