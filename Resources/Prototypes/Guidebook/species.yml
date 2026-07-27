@@ -24,7 +24,7 @@
     # ImpStation additions
     - Thaven
     # Den addition
-    - Ovinia
+    # - Ovinia # Floof - missing? unknown
     # Floof section
     - Tajaran
     - IPC
@@ -70,10 +70,11 @@
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
 
-- type: guideEntry # Floof - preserved
-  id: IPC
-  name: species-name-ipc
-  text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"
+# removed
+#- type: guideEntry
+#  id: IPC
+#  name: species-name-ipc
+#  text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"
 
 - type: guideEntry # Floof - Tajaran Update b7660b9
   id: Tajaran
