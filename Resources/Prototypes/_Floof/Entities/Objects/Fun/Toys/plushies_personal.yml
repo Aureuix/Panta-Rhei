@@ -1312,7 +1312,7 @@
     delay: 3.0
   - type: EmitSoundOnActivate
     sound: &ipcWhirr
-      path: /Audio/Effects/beep1.ogg # Used to be /Audio/_EE/Voice/IPC/whirr3.ogg
+      path: /Audio/_EE/Voice/IPC/whirr3.ogg
       params:
         volume: -4
         variation: 0.05

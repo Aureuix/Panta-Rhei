@@ -199,9 +199,6 @@
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
-      # Shitmed
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
   - type: Puller
   - type: Speech
     speechSounds: Alto
