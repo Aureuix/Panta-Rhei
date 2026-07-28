@@ -57,10 +57,10 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly FaxecuteSystem _faxecute = default!;
     [Dependency] private readonly EmagSystem _emag = default!;
     [Dependency] private readonly PageSenderSystem _pageSender = default!; // DeltaV - pagers
-    #region Euphoria: Allow for handheld fax or copy machines
+    // Begin Euphoria additions
     [Dependency] private readonly PowerCellSystem _cell = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
-    #endregion
+    // End Euphoria additions
 
     private static readonly ProtoId<ToolQualityPrototype> ScrewingQuality = "Screwing";
 
@@ -101,10 +101,6 @@ public sealed class FaxSystem : EntitySystem
         while (query.MoveNext(out var uid, out var fax)) // DeltaV - faxes aren't necessarily powered
         {
             if (TryComp<ApcPowerReceiverComponent>(uid, out var receiver) && !receiver.Powered) // DeltaV - faxes aren't necessarily powered
-                continue;
-
-            // Euphoria - this also accounts for batteries.
-            if (!this.IsPowered(uid, EntityManager))
                 continue;
 
             ProcessPrintingAnimation(uid, frameTime, fax);

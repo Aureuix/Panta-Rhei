@@ -126,7 +126,7 @@ public sealed partial class TraitEntry : PanelContainer
             }
             else
             {
-                result = EvaluateCondition(condition, jobId, speciesId, antagPreferences); // Euphoria
+                result = EvaluateCondition(condition, jobId, speciesId, antagPreferences, selectedTraits); // Euphoria
 
                 // Apply inversion for non-dependency conditions
                 result ^= condition.Invert;
@@ -156,7 +156,12 @@ public sealed partial class TraitEntry : PanelContainer
     }
 
     // Euphoria - just to eliminate some of this code repetition above. This is still a terrible fucking joke.
-    private bool EvaluateCondition(BaseTraitCondition cond, ProtoId<JobPrototype>? jobId, ProtoId<SpeciesPrototype>? speciesId, IReadOnlySet<ProtoId<AntagPrototype>>? antagPreferences) => cond switch
+    private bool EvaluateCondition(BaseTraitCondition cond,
+        ProtoId<JobPrototype>? jobId,
+        ProtoId<SpeciesPrototype>? speciesId,
+        IReadOnlySet<ProtoId<AntagPrototype>>? antagPreferences,
+        IReadOnlySet<ProtoId<TraitPrototype>>? selectedTraits
+    ) => cond switch
     {
         ITraitConditionSkipLobbyCheck skipCond => !cond.Invert, // Euphoria: Skip conditions that can't be reliably checked in the lobby.
         IsSpeciesCondition speciesCond => CheckSpeciesCondition(speciesCond, speciesId),
@@ -169,7 +174,7 @@ public sealed partial class TraitEntry : PanelContainer
         */
         #endregion
         IsAntagEligibleCondition antagEligibleCond => CheckAntagEligibleCondition(antagEligibleCond, antagPreferences),
-        AnyOfCondition anyOfCond => CheckAnyOfCondition(anyOfCond, jobId, speciesId, antagPreferences),
+        AnyOfCondition anyOfCond => CheckAnyOfCondition(anyOfCond, jobId, speciesId, antagPreferences, selectedTraits),
         _ => WrapExpression.Return(true, _ => Log.Warning($"Condition {cond.GetType()} lacks a client-side handler. This code is horrible.")), // Floofstation - log error
     };
     // End Euphoria additions
@@ -267,7 +272,7 @@ public sealed partial class TraitEntry : PanelContainer
             }
             else
             {
-                result = EvaluateCondition(condition, jobId, speciesId, antagPreferences); // Euphoria
+                result = EvaluateCondition(condition, jobId, speciesId, antagPreferences, selectedTraits); // Euphoria
 
                 result ^= childCondition.Invert;
             }

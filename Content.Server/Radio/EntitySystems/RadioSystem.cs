@@ -199,8 +199,7 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
             wrappedMessage,
             messageSource,
             null,
-            speech, channel, name, language, // Euphoria
-            radioChannelProto: channel.ID); // DeltaV - Add RadioChannel for committing sins
+            speech, channel, name, language);
         var chatMsg = new MsgChatMessage { Message = chat };
         var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg);
 

@@ -55,11 +55,11 @@
     DrinkCaramelBottleFull: 3 # Caramel for ice cream stuff
     GlassChoppedNuts: 5 # Metaglass of chopped nuts; Here as a stop-gap until we make pistachios growable
     # End DeltaV additions
-    # Begin Euphroia additions
+    # Begin Euphoria additions
     DrinkVBLongneckFull: 5 # Floofstation
     DrinkAnisetteBottleFull: 2 # Floofstation
     DrinkCumBottleFull: 2 # Floofstation
-    # End Euphroia additions
+    # End Euphoria additions
   contrabandInventory:
     ChemistryBottleEthanol: 3
     DrinkBottleOfNothingFull: 1

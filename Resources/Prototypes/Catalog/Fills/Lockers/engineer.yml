@@ -161,10 +161,10 @@
     - id: RCD
     - id: RCDAmmo
     - id: AirGrenade
-    # Begin Euphroia additions
+    # Begin Euphoria additions
     - id: ClothingBeltUtilityAtmos
     - id: AccessConfigurator
-    # End Euphroia additions
+    # End Euphoria additions
 
 - type: entityTable
   id: FillAtmosphericsHardsuit
@@ -211,10 +211,10 @@
     - id: RCD
     - id: RCDAmmo
     - id: MetalFoamGrenade
-    # Begin Euphroia additions
+    # Begin Euphoria additions
     - id: AccessConfigurator
     - id: ClothingBeltUtilityEngineering
-    # End Euphroia additions
+    # End Euphoria additions
 
 - type: entityTable
   id: FillEngineerHardsuit
