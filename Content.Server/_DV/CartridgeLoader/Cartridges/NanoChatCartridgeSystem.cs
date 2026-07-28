@@ -684,15 +684,10 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
     {
         List<NanoChatRecipient>? contacts;
 
-        // Floof - removed station check i guesS?
-        //if (_station.GetOwningStation(loader) is { } station)
-        //{
-        //    ent.Comp.Station = station;
         if (CanSend(ent) && _radio.HasActiveServer(Transform(ent).MapID, ent.Comp.RadioChannel))
         {
             contacts = [];
 
-            // Floof - removed station checks from the below
             var query = AllEntityQuery<NanoChatCardComponent, IdCardComponent>();
             while (query.MoveNext(out var entityId, out var nanoChatCard, out var idCardComponent))
             {

@@ -1,5 +1,7 @@
 using Content.Server.Administration.Logs;
+using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
+using Content.Server.Ghost;
 using Content.Server.Power.Components;
 using Content.Shared._DV.Chat;
 using Content.Shared._Floof.Language;
@@ -30,6 +32,8 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly IChatManager _chatManager = default!;
+    [Dependency] private readonly GhostSystem _ghost = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -71,8 +75,25 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
     private void OnIntrinsicReceive(EntityUid uid, IntrinsicRadioReceiverComponent component, ref RadioReceiveEvent argsRaw)
     {
         var args = ApplyLanguageUnderstanding(argsRaw, uid); // Floofstation - languages
-        if (TryComp(uid, out ActorComponent? actor))
-            _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
+        if (!TryComp(uid, out ActorComponent? actor))
+            return;
+
+        var msg = args.ChatMsg;
+        if (_ghost.CanGhostWarp(actor.PlayerSession, out _))
+        {
+            msg = new MsgChatMessage
+            {
+                Message = new ChatMessage(args.ChatMsg.Message)
+                {
+                    WrappedMessage = _chatManager.PrependFollowButtonIfAppropriate(
+                        args.ChatMsg.Message.WrappedMessage,
+                        args.MessageSource,
+                        actor.PlayerSession.Channel),
+                },
+            };
+        }
+
+        _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
     }
 
     // DeltaV
@@ -121,6 +142,9 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
             ? FormattedMessage.EscapeText(message)
             : message;
 
+        // Euphoria - most of this method was rewritten.
+        // This is an active minefield. Even if you think you know what you're doing, only step in if absolutely necessary.
+
         // DeltaV - This change is to change up how the messages are wrapped up. Basically changing the formatting depending on the emote type.
         string wrappedMessage;
         LanguagePrototype? language = null; // Floof
@@ -139,7 +163,6 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
                 ("message", content));
         else
         {
-            // Floof
             language = languageOverride ?? _language.GetLanguage(messageSource);
             if (!language.SpeechOverride.AllowRadio)
                 return;
@@ -170,13 +193,14 @@ public sealed partial class RadioSystem : EntitySystem // Floofstation - made pa
         // DeltaV - End
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
-        var chat = MakeChatMessage( // Floofstation - replace with a method call
+        var chat = MakeChatMessage( // Euphoria - replace with a method call
             ChatChannel.Radio,
             message,
             wrappedMessage,
             messageSource,
             null,
-            speech, channel, name, language);
+            speech, channel, name, language, // Euphoria
+            radioChannelProto: channel.ID); // DeltaV - Add RadioChannel for committing sins
         var chatMsg = new MsgChatMessage { Message = chat };
         var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg);
 

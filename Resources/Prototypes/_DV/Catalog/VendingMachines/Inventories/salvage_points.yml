@@ -45,11 +45,11 @@
     cost: 1000
   # TODO: lazarus injector for 1k
   # TODO: tracer rounds / chassis mods for 100/150/250/300
+  # Begin Euphoria additions
   - id: PKAUpgradeRange
     cost: 3500
   - id: PKAUpgradeDamage
     cost: 5000
-  #BEGIN floofstation addtions
   - id: WeaponSniperMosin
     cost: 5000
   - id: WeaponPistolForged
@@ -62,7 +62,9 @@
     cost: 7000
   - id: WeaponSniperForged
     cost: 9000
-  #END floofstation additions
+  - id: LavalandJaunter # Ported from goob (?)
+    cost: 2500
+  # End Euphoria additions
   # TODO: AOE modkit for 2k
   - id: SeismicCharge
     cost: 1250
@@ -81,5 +83,3 @@
   # TODO: mining drone stuff
   - id: MedicalTrackingImplanter
     cost: 10000
-  - id: LavalandJaunter # Floof port (?)
-    cost: 2500

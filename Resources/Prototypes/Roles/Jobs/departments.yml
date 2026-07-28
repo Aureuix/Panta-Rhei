@@ -8,9 +8,11 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
-  - Courier # DeltaV - Courier, see Resources/Prototypes/_DV/Roles/Jobs/Cargo/courier.yml
-  - CargoAssistant # DeltaV
-  - InventorySpecialist # Floofstation - InventorySpecialist, see /Resources/Prototypes/_Floof/Roles/Jobs/Cargo/inventory_specialist.yml
+  # BEGIN DeltaV Logistics Jobs
+  - Courier
+  - CargoAssistant
+  # END DeltaV
+  - InventorySpecialist # Euphoria
 
 - type: department
   id: Civilian
@@ -22,7 +24,6 @@
   roles:
   - Bartender
   - Botanist
-  - Boxer # DeltaV - Keep Zookeeper/Boxer
   # - Chaplain # DeltaV - Move Chaplain into Epistemics
   - Chef
   - Clown
@@ -35,11 +36,12 @@
   - Passenger
   - Reporter
   - Visitor
-  - Zookeeper # DeltaV - Keep Zookeeper/Boxer
   - ServiceWorker
-  - MartialArtist # Nyanotrasen - MartialArtist, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/martialartist.yml
-  - Prisoner # Nyanotrasen - Prisoner, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
-  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
+  # BEGIN DeltaV Jobs
+  - Boxer
+  - MartialArtist
+  - Zookeeper
+  # END DeltaV
 
 - type: department
   id: CentralCommand
@@ -99,7 +101,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
-  - SeniorEngineer # Floofstation - SeniorEngineer, see /Resources/Prototypes/_Floof/Roles/Jobs/Engineering/ssenior_engineer.yml
+  - SeniorEngineer # Euphoria
 
 - type: department
   id: Medical
@@ -114,9 +116,11 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - MedicalBorg # Delta V - Medical Borg, see Resources/Prototypes/_DV/Roles/Jobs/Medical/medicalborg.yml
-  - Surgeon # Delta V - Surgeon, see Resources/Prototypes/_DV/Roles/Jobs/Medical/surgeon.yml
-  - SeniorPhysician # Floofstation - SeniorPhysician, see /Resources/Prototypes/_Floof/Roles/Jobs/Medical/senior_physician.yml
+  # BEGIN DeltaV Med Jobs
+  - MedicalBorg
+  - Surgeon
+  # END DeltaV
+  - SeniorPhysician # Euphoria
 
 - type: department
   id: Security
@@ -131,13 +135,14 @@
   - SecurityOfficer
   - Detective
   - Warden
-  - PrisonGuard # Nyanotrasen - PrisonGuard, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Security/prisonguard.yml
-  - Brigmedic # DeltaV - Brigmedic, see Resources/Prototypes/_DV/Roles/Jobs/Security/brigmedic.yml
-  - SecurityBorg # Delta-V : Security Borg
-  - SeniorOfficer # Euphoria - SeniorOfficer, see /Resources/Prototypes/_Floof/Roles/Jobs/Security/senior_officer.yml
-  - SecurityTechnician # Euphoria | SecTech, see /Resources/Prototypes/_Floof/Roles/Jobs/Security/security_technician.yml
-  - RoleLaika # Delta-V : Secdogs, see Resources/Prototypes/_DV/Roles/Jobs/Pets/pets.yml
-  - RoleK9Officer # Delta-V : Secdogs, see Resources/Prototypes/_DV/Roles/Jobs/Security/k9.yml
+  # BEGIN DeltaV Sec Jobs
+  - Brigmedic
+  - PrisonGuard
+  - SecurityBorg
+  - RoleLaika
+  - RoleK9Officer
+  # END DeltaV
+  - SecurityTechnician # Euphoria
 
 - type: department
   id: Epistemics # DeltaV - Epistemics Department replacing Science
@@ -149,11 +154,13 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
-  - Chaplain # DeltaV - Move Chaplain into Epistemics
-  - ForensicMantis # Nyanotrasen - ForensicMantis, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Epistemics/forensicmantis.yml
-  - Roboticist # DeltaV: Roboticist job
-  - Librarian # DeltaV - Move Librarian into epistemics as curator
-  - SeniorResearcher # Floofstation - SeniorResearcher, see /Resources/Prototypes/_Floof/Roles/Jobs/Science/senior_researcher.yml
+  # BEGIN DeltaV Epi Jobs
+  - Chaplain # Moved from Service into Epi
+  - ForensicMantis
+  - Librarian # Curator, moved from Service into Epi
+  - Roboticist
+  # END DeltaV
+  - SeniorResearcher # Euphoria
 
 - type: department
   id: Silicon
@@ -162,24 +169,24 @@
   color: "#D381C9"
   roles:
   - Borg
-  - MedicalBorg # DeltaV - roundstart mediborg job
-  - SecurityBorg # Delta-V : Security Borg
   - StationAi
+  # BEGIN DeltaV Silicon Jobs
+  - MedicalBorg
+  - SecurityBorg
+  # END DeltaV
   primary: false # DeltaV - removed from primary dept
 
-- type: department
-  id: Specific
-  name: department-Specific
-  description: department-Specific-description
-  color: "#9FED58"
-  weight: 10
-  roles:
-  - Boxer # DeltaV - Keep Zookeeper/Boxer
-  #- Reporter | Euphoria - Removed from Station Specific
-  - Zookeeper # DeltaV - Keep Zookeeper/Boxer
-  #- Psychologist | Euphoria - Removed from Station Specific
-  - MartialArtist # Nyanotrasen - MartialArtist, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/martialartist.yml
-  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
-  #- Prisoner # Nyanotrasen - Prisoner, see Resrouces/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
-  #- Brigmedic # DeltaV - Corpsman, see Resources/Prototypes/_DV/Roles/Jobs/Security/brigmedic.yml | Euphoria - Removed from Station Specific
-  primary: false
+# DeltaV - get rid of 'station-specific' as a department. All of these
+#          jobs are under another category, so all this does is list
+#          them twice in the job select and on the crew monitor.
+# - type: department
+#   id: Specific
+#   name: department-Specific
+#   description: department-Specific-description
+#   color: "#9FED58"
+#   weight: 10
+#   roles:
+#   - Reporter
+#   - Psychologist
+#   primary: false
+# END DeltaV

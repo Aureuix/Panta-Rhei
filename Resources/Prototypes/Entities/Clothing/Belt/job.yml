@@ -186,7 +186,7 @@
       - SurgeryTool
       - Dropper
       - Vial # DeltaV
-      - MedicalMisc # Euphoria
+      - PurifyingSalts # DeltaV
       components:
       - Injector
       - Pill

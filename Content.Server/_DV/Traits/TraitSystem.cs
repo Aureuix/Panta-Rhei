@@ -118,7 +118,8 @@ public sealed partial class TraitSystem : EntitySystem // Euph - made partial
             JobId = jobId,
             SpeciesId = speciesId,
             Profile = profile,
-            StatusEffects = _statusEffects
+            StatusEffects = _statusEffects,
+            SelectedTraits = selectedTraits
         };
 
         #region Euphoria: Fix order-dependant trait validation

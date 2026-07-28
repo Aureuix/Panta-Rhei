@@ -327,6 +327,7 @@
     count: 10
   - type: StackPrice
     price: 5
-  - type: Tag # Euphoria
+  - type: Tag
     tags:
-    - MedicalMisc
+    - PurifyingSalts
+    - MedicalMisc # Euphoria
