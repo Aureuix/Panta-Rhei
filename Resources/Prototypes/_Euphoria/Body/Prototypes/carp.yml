@@ -16,8 +16,8 @@
         heart: OrganBloodsuckerHeart # used to be "OrganSpaceAnimalHeart # Immunity to cold", changed to match upstream Bloodsucker
         kidneys: OrganAnimalKidneys
     tail:
-      part: TailCarp
+      part: LegsAnimal # was TailCarp, shitmed removal nuked it
     right hand:
-      part: RightHandFish
+      part: RightHandFeroxi # was RightHandFish, shitmed removal nuked it
     left hand:
-      part: LeftHandFish
+      part: LeftHandFeroxi # was LeftHandFish, shitmed removal nuked it
