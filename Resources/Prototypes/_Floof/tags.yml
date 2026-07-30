@@ -39,6 +39,3 @@
 
 - type: Tag
   id: FloorTile # so floor tiles of any kind can go into the construction bag
-
-- type: Tag
-  id: SiliconOrIPCEmotes # Preserved from _DV where it was removed: upstream's SiliconEmotes = only bots and borgs, this one includes IPCs

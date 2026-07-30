@@ -14,7 +14,7 @@ public sealed partial class IPCSystem
     protected override void SetupBattery()
     {
         base.SetupBattery();
-        
+
         SubscribeLocalEvent<IPCBatteryComponent, StartingGearEquippedEvent>(OnBatteryStartingGear);
         SubscribeLocalEvent<IPCBatteryComponent, PowerCellChangedEvent>(OnPowerCellChanged);
         SubscribeLocalEvent<IPCBatteryComponent, PowerCellSlotEmptyEvent>(OnPowerCellSlotEmpty);
@@ -26,7 +26,7 @@ public sealed partial class IPCSystem
         _powerCell.SetDrawEnabled(ent.Owner, !_state.IsDead(ent));
         UpdateUI(ent);
     }
-        
+
 
     protected override void UpdateBatteryTimer(Entity<IPCBatteryComponent> ent)
     {
@@ -56,7 +56,7 @@ public sealed partial class IPCSystem
             _popup.PopupEntity(Loc.GetString(ent.Comp.WarningText), ent, PopupType.LargeCaution);
         _audio.PlayPvs(ent.Comp.WarningSound, ent);
     }
-    
+
     private void OnBatteryStartingGear(Entity<IPCBatteryComponent> ent, ref StartingGearEquippedEvent args)
     {
         if (!TryComp<BatteryDrainerComponent>(ent, out var drainer))
@@ -75,7 +75,7 @@ public sealed partial class IPCSystem
     }
     private void OnPowerCellChanged(Entity<IPCBatteryComponent> ent, ref PowerCellChangedEvent args)
     {
-        if(!_powerCell.HasDrawCharge(ent))
+        if(!_powerCell.HasDrawCharge(ent.Owner))
             StartDeathTimer(ent);
         else
             StopDeathTimer(ent);
@@ -87,7 +87,7 @@ public sealed partial class IPCSystem
     private static void StartDeathTimer(Entity<IPCBatteryComponent> ent){
         if (ent.Comp.TimerActive)
             return;
-        
+
         ent.Comp.TimerActive = true;
         ent.Comp.WarningsIssued = 0;
         ent.Comp.Timer = ent.Comp.DieWithoutPowerAfter;
@@ -96,7 +96,7 @@ public sealed partial class IPCSystem
     private static void StopDeathTimer(Entity<IPCBatteryComponent> ent){
         if (!ent.Comp.TimerActive)
             return;
-        
+
         ent.Comp.TimerActive = false;
         ent.Comp.WarningsIssued = 0;
         ent.Comp.Timer = 0f;
@@ -104,20 +104,20 @@ public sealed partial class IPCSystem
 
     private void UpdateBatteryAlert(Entity<IPCBatteryComponent> ent)
     {
-        if (_state.IsAlive(ent) && ent.Comp.TimerActive && !_powerCell.HasDrawCharge(ent)){
+        if (_state.IsAlive(ent) && ent.Comp.TimerActive && !_powerCell.HasDrawCharge(ent.Owner)){
             _alerts.ShowAlert(ent.Owner, ent.Comp.ChargeCritical);
         } else {
             _alerts.ClearAlert(ent.Owner, ent.Comp.ChargeCritical);
         }
 
-        if (!_powerCell.TryGetBatteryFromSlot(ent, out var battery, ent.Comp.PowerCellSlot))
+        if (!_powerCell.TryGetBatteryFromSlot((ent.Owner, ent.Comp.PowerCellSlot), out var battery))
         {
             _alerts.ClearAlert(ent.Owner, ent.Comp.BatteryAlert);
             _alerts.ShowAlert(ent.Owner, ent.Comp.NoBatteryAlert);
             return;
         }
 
-        var chargePercent = (short) MathF.Round(battery.CurrentCharge / battery.MaxCharge * 10f);
+        var chargePercent = (short) MathF.Round(battery.Value.Comp.CurrentCharge / battery.Value.Comp.MaxCharge * 10f);
 
         _alerts.ClearAlert(ent.Owner, ent.Comp.NoBatteryAlert);
         _alerts.ShowAlert(ent.Owner, ent.Comp.BatteryAlert, chargePercent);
@@ -137,7 +137,7 @@ public sealed partial class IPCSystem
         if (!Resolve(ent, ref ent.Comp) ||
             ent.Comp.Battery == null)
             return;
-        
+
         var battery = ent.Comp.Battery.Value;
         _container.EmptyContainer(ent.Comp.BatteryContainerSlot);
 

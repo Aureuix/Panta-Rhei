@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Medical.Healing;
-using Content.Shared.Starlight.Medical.Surgery;
 using Content.Shared.Tag;
 
 namespace Content.Shared._FarHorizons.Medical.ConditionalHealing;
@@ -17,8 +16,9 @@ public sealed class ConditionalHealingSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<ConditionalHealingComponent, UseInHandEvent>(OnUse, before: [typeof(HealingSystem), typeof(SharedSurgerySystem)]);
-        SubscribeLocalEvent<ConditionalHealingComponent, AfterInteractEvent>(OnAfterInteract, before: [typeof(HealingSystem), typeof(SharedSurgerySystem)]);
+        // Euph - no surgery
+        SubscribeLocalEvent<ConditionalHealingComponent, UseInHandEvent>(OnUse/*, before: [typeof(HealingSystem), typeof(SharedSurgerySystem)] */);
+        SubscribeLocalEvent<ConditionalHealingComponent, AfterInteractEvent>(OnAfterInteract/*, before: [typeof(HealingSystem), typeof(SharedSurgerySystem)] */);
     }
 
     private void OnUse(Entity<ConditionalHealingComponent> ent, ref UseInHandEvent args)
@@ -41,6 +41,7 @@ public sealed class ConditionalHealingSystem : EntitySystem
 
         args.Handled = _healing.TryHeal((ent, healing.MakeComponent()), args.Target.Value, args.User);
     }
+
     public ConditionalHealingData? SelectBestMatch(Entity<ConditionalHealingComponent?> item, EntityUid target) =>
         !Resolve(item, ref item.Comp, false)
             ? null

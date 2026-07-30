@@ -172,7 +172,7 @@ public sealed partial class IPCMenu : FancyWindow
         var longestName = items.Select(p => p.name.Length).OrderDescending().FirstOrDefault(0);
         if (longestName < 1)
             return result;
-        
+
         foreach (var (name, value) in items)
         {
             var lenDiff = longestName - name.Length;
@@ -184,21 +184,21 @@ public sealed partial class IPCMenu : FancyWindow
 
     private void UpdateBrainButton(IPCBrainHolderComponent? brainComp)
     {
-        if (brainComp != null && 
+        if (brainComp != null &&
             brainComp.BrainEntity is EntityUid brain)
         {
             BrainButton.Text = _entity.GetComponent<MetaDataComponent>(brain).EntityName;
             BrainView.Visible = true;
             BrainView.SetEntity(brain);
             BrainButton.Disabled = false;
-            BrainButton.AddStyleClass(StyleBase.ButtonOpenLeft);
+            BrainButton.AddStyleClass(StyleClass.ButtonOpenLeft);
         }
         else
         {
             BrainButton.Text = Loc.GetString("borg-ui-no-brain");
             BrainButton.Disabled = true;
             BrainView.Visible = false;
-            BrainButton.RemoveStyleClass(StyleBase.ButtonOpenLeft);
+            BrainButton.RemoveStyleClass(StyleClass.ButtonOpenLeft);
         }
     }
 
@@ -216,7 +216,7 @@ public sealed partial class IPCMenu : FancyWindow
         obj.Control.Text = _lastValidName;
     }
 
-    private void OnNameEntered(LineEdit.LineEditEventArgs _) => 
+    private void OnNameEntered(LineEdit.LineEditEventArgs _) =>
         NameChanged?.Invoke(_lastValidName);
 
     private void OnNameFocusExit(LineEdit.LineEditEventArgs obj)

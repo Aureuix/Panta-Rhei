@@ -69,7 +69,7 @@ public sealed partial class IPCSystem
         if (_powerCell.TryGetBatteryFromSlot(uid, out var battery))
         {
             hasBattery = true;
-            chargePercent = battery.CurrentCharge / battery.MaxCharge;
+            chargePercent = battery.Value.Comp.CurrentCharge / battery.Value.Comp.MaxCharge;
         }
 
         if (TryComp<DamageableComponent>(uid, out var damageable))
