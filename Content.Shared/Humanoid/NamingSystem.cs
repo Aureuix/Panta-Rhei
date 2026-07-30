@@ -54,6 +54,11 @@ namespace Content.Shared.Humanoid
                 case SpeciesNaming.FirstDashFirst:
                     return Loc.GetString("namepreset-firstdashfirst",
                         ("first1", GetFirstName(speciesProto, gender)), ("first2", GetFirstName(speciesProto, gender)));
+                // Begin Euphoria additions - IPC
+                case SpeciesNaming.FirstDashLast:
+                    return Loc.GetString("namepreset-firstdashfirst",
+                        ("first1", GetFirstName(speciesProto, gender)), ("first2", GetLastName(speciesProto)));
+                // End Euphoria additions
                 case SpeciesNaming.LastFirst: // DeltaV: Rodentia name scheme
                     return Loc.GetString("namepreset-lastfirst",
                         ("last", GetLastName(speciesProto)), ("first", GetFirstName(speciesProto, gender)));
