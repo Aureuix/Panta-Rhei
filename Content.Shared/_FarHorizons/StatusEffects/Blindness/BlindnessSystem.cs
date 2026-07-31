@@ -4,7 +4,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._FarHorizons.StatusEffects.Blindness;
 
-public abstract class SharedBlindnessSystem : EntitySystem
+public sealed class SharedBlindnessSystem : EntitySystem
 {
     [Dependency] private readonly ILogManager _logs = default!;
     private ISawmill _sawmill = default!;

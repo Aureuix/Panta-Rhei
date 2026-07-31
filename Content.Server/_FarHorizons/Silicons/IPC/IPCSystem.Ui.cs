@@ -1,13 +1,7 @@
 using Content.Shared._FarHorizons.Silicons.IPC;
-using Content.Shared.Body.Components;
+using Content.Shared._FarHorizons.Silicons.IPC.Components;
 using Content.Shared.CCVar;
-using Content.Shared.Damage;
-using Content.Shared.Damage.Components;
-using Content.Shared.Damage.Systems;
 using Content.Shared.Database;
-using Content.Shared.Eye.Blinding.Components;
-using Content.Shared.Mobs.Components;
-using Content.Shared.UserInterface;
 
 namespace Content.Server._FarHorizons.Silicons.IPC;
 
@@ -18,21 +12,67 @@ public sealed partial class IPCSystem
 
     private void InitializeUI()
     {
-        SubscribeLocalEvent<IPCLockComponent, BeforeActivatableUIOpenEvent>(OnBeforeIPCUiOpen);
-        SubscribeLocalEvent<IPCLockComponent, DamageChangedEvent>( (ent, _, _) => UpdateUI(ent));
-
-        SubscribeLocalEvent<IPCLockComponent, IPCEjectBrainBuiMessage>(OnEjectBrainBuiMessage);
-        SubscribeLocalEvent<IPCLockComponent, IPCEjectBatteryBuiMessage>(OnEjectBatteryBuiMessage);
-        SubscribeLocalEvent<IPCLockComponent, IPCSetNameBuiMessage>(OnSetNameBuiMessage);
+        SubscribeLocalEvent<IPCUserInterfaceComponent, IPCEjectBrainBuiMessage>(OnEjectBrainBuiMessage);
+        SubscribeLocalEvent<IPCUserInterfaceComponent, IPCEjectBatteryBuiMessage>(OnEjectBatteryBuiMessage);
+        SubscribeLocalEvent<IPCUserInterfaceComponent, IPCSetNameBuiMessage>(OnSetNameBuiMessage);
+        SubscribeLocalEvent<IPCUserInterfaceComponent, BoundUIOpenedEvent>(OnUIOpened);
 
         Subs.CVar(_cfgManager, CCVars.MaxNameLength, value => _maxNameLength = value, true);
     }
 
-    private void OnEjectBrainBuiMessage(Entity<IPCLockComponent> ent, ref IPCEjectBrainBuiMessage args) =>
+    protected override void UpdateUI(float frameTime)
+    {
+        var query = EntityQueryEnumerator<IPCUserInterfaceComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            if (!_ui.IsUiOpen(uid, IPCUiKey.Key)) continue;
+
+            if (_timing.CurTime < comp.NextUpdate) continue;
+
+            comp.NextUpdate = _timing.CurTime + comp.RefreshRate;
+
+            UpdateUIHealth(uid);
+        }
+    }
+
+    private void OnUIOpened(Entity<IPCUserInterfaceComponent> ent, ref BoundUIOpenedEvent args) =>
+        UpdateUIHealth(ent.Owner);
+        
+    private void UpdateUIHealth(EntityUid ent)
+    {
+        var healthMessage = new IPCHealthMessage(_bloodstream.GetBloodLevel(ent));
+
+        _ui.ServerSendUiMessage(ent, IPCUiKey.Key, healthMessage);
+    }
+
+    private void OnEjectBrainBuiMessage(Entity<IPCUserInterfaceComponent> ent, ref IPCEjectBrainBuiMessage args)
+    {
+        if (!TryComp<IPCLockComponent>(ent.Owner, out var lockComp)) return;
+
+        if (lockComp.Lock.Locked || !lockComp.WiresPanel.Open)
+        {
+            _popup.PopupEntity(Loc.GetString(lockComp.LockedPopupMessage), ent);
+            _audio.PlayPvs(lockComp.LockedSound, ent);
+            return;
+        }
+
         EjectBrain(ent.Owner, args.Actor);
-    private void OnEjectBatteryBuiMessage(Entity<IPCLockComponent> ent, ref IPCEjectBatteryBuiMessage args) =>
+    }
+
+    private void OnEjectBatteryBuiMessage(Entity<IPCUserInterfaceComponent> ent, ref IPCEjectBatteryBuiMessage args)
+    {
+        if (!TryComp<IPCLockComponent>(ent.Owner, out var lockComp)) return;
+
+        if (lockComp.Lock.Locked || !lockComp.WiresPanel.Open)
+        {
+            _popup.PopupEntity(Loc.GetString(lockComp.LockedPopupMessage), ent);
+            _audio.PlayPvs(lockComp.LockedSound, ent);
+            return;
+        }
+
         EjectBattery(ent.Owner, args.Actor);
-    private void OnSetNameBuiMessage(Entity<IPCLockComponent> ent, ref IPCSetNameBuiMessage args)
+    }
+    private void OnSetNameBuiMessage(Entity<IPCUserInterfaceComponent> ent, ref IPCSetNameBuiMessage args)
     {
         if (args.Name.Length > _maxNameLength ||
             args.Name.Length == 0 ||
@@ -48,42 +88,6 @@ public sealed partial class IPCSystem
             return;
 
         _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(args.Actor):player} set IPC \"{ToPrettyString(ent)}\"'s name to: {name}");
-        _metaData.SetEntityName(ent, name, metaData);
+        _metaData.SetEntityName(ent, name, metaData, false);
     }
-
-    private void OnBeforeIPCUiOpen(Entity<IPCLockComponent> ent, ref BeforeActivatableUIOpenEvent args)
-    {
-        UpdateUI(ent);
-    }
-
-    public void UpdateUI(EntityUid uid)
-    {
-        if (!_ui.IsUiOpen(uid, IPCUiKey.Key))
-            return;
-
-        var chargePercent = 0f;
-        var hasBattery = false;
-        var eyeDamage = 0;
-        var bloodLevel = 0f;
-        DamageSpecifier damage = new();
-        if (_powerCell.TryGetBatteryFromSlot(uid, out var battery))
-        {
-            hasBattery = true;
-            chargePercent = battery.Value.Comp.CurrentCharge / battery.Value.Comp.MaxCharge;
-        }
-
-        if (TryComp<DamageableComponent>(uid, out var damageable))
-            damage = damageable.Damage;
-
-        if (TryComp<BlindableComponent>(uid, out var blindable))
-            eyeDamage = blindable.EyeDamage;
-
-        if (TryComp<BloodstreamComponent>(uid, out var bloodstream) &&
-            _solutionContainerSystem.ResolveSolution(uid, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var bloodSolution))
-                bloodLevel = bloodSolution.FillFraction;
-
-        if (TryComp<MobStateComponent>(uid, out var mobState))
-            _ui.SetUiState(uid, IPCUiKey.Key,
-                new IPCBuiState(chargePercent, hasBattery, mobState.CurrentState, eyeDamage, bloodLevel, damage));
-    }
-}
+} 

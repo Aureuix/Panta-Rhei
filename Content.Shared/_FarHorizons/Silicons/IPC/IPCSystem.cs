@@ -1,9 +1,11 @@
+using Content.Shared.Body.Systems;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Lock;
 using Content.Shared.Popups;
 using Content.Shared.PowerCell;
+using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Random;
@@ -27,29 +29,37 @@ public abstract partial class SharedIPCSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
 
-    private const float TimerDelay = 1f;
-    private float _timer = 0f;
-
     public override void Initialize()
     {
         base.Initialize();
 
+        SubscribeLocalEvent<GetVerbsEvent<AlternativeVerb>>(AddAltVerbs);
+
+        SetupThermals();
         SetupBrain();
         SetupRevive();
         SetupBattery();
         SetupRadio();
         SetupLock();
+        SetupModule();
+    }
+
+    private void AddAltVerbs(GetVerbsEvent<AlternativeVerb> ev)
+    {
+        if (!ev.CanAccess || !ev.CanInteract)
+            return;
+        AddLockAltVerbs(ev);
+        AddBatteryAltVerbs(ev);
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        _timer += frameTime;
-        if (_timer < TimerDelay)
-            return;
-        _timer -= TimerDelay;
-
-        UpdateBattery(TimerDelay);
+        UpdateBattery(frameTime);
+        UpdateThermals(frameTime);
+        UpdateUI(frameTime);
     }
+
+    protected virtual void UpdateUI(float frameTime) { }
 }

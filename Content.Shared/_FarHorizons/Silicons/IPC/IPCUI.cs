@@ -1,4 +1,4 @@
-using Content.Shared.Damage;
+using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
 using Robust.Shared.Serialization;
 
@@ -11,47 +11,19 @@ public enum IPCUiKey : byte
 }
 
 [Serializable, NetSerializable]
-public sealed class IPCBuiState : BoundUserInterfaceState
-{
-    public float ChargePercent;
-
-    public bool HasBattery;
-
-    public MobState MobState;
-
-    public int EyeDamage;
-
-    public float BloodLevel;
-
-    public DamageSpecifier Damage;
-
-    public IPCBuiState(float chargePercent, bool hasBattery, MobState mobState, int eyeDamage, float bloodLevel, DamageSpecifier damage)
-    {
-        ChargePercent = chargePercent;
-        HasBattery = hasBattery;
-        MobState = mobState;
-        EyeDamage = eyeDamage;
-        BloodLevel = bloodLevel;
-        Damage = damage;
-    }
-}
-
-[Serializable, NetSerializable]
 public sealed class IPCEjectBrainBuiMessage : BoundUserInterfaceMessage;
 
 [Serializable, NetSerializable]
 public sealed class IPCEjectBatteryBuiMessage : BoundUserInterfaceMessage;
 
 [Serializable, NetSerializable]
-public sealed class IPCSetNameBuiMessage : BoundUserInterfaceMessage
+public sealed class IPCSetNameBuiMessage(string name) : BoundUserInterfaceMessage
 {
-    public string Name;
-
-    public IPCSetNameBuiMessage(string name)
-    {
-        Name = name;
-    }
+    public string Name = name;
 }
 
 [Serializable, NetSerializable]
-public sealed class IPCRequestUpdateBuiMessage : BoundUserInterfaceMessage;
+public sealed class IPCHealthMessage(FixedPoint2 bloodLevel) : BoundUserInterfaceMessage
+{
+    public FixedPoint2 BloodLevel = bloodLevel;
+}

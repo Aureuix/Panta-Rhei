@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._FarHorizons.Silicons.IPC.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Radio.Components;
 using Content.Shared.Wires;
@@ -23,6 +24,12 @@ public abstract partial class SharedIPCSystem
         if (!TryComp<WiresPanelComponent>(target, out var panel) || !panel.Open)
         {
             _popup.PopupPredicted(Loc.GetString("encryption-keys-panel-locked"), target, user);
+            return false;
+        }
+
+        if (radio.EncryptionKeysContainer.ContainedEntities.Count >= radio.KeysCapacity)
+        {
+            _popup.PopupPredicted(Loc.GetString("encryption-key-slots-already-full"), target, user);
             return false;
         }
 

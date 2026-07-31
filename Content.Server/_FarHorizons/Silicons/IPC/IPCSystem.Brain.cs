@@ -1,5 +1,6 @@
-using Content.Shared._FarHorizons.Silicons.IPC;
+using Content.Shared._FarHorizons.Silicons.IPC.Components;
 using Content.Shared.Database;
+using Content.Shared.Gibbing;
 using Content.Shared.Interaction;
 using Content.Shared.Mind.Components;
 using Content.Shared.Silicons.Borgs.Components;
@@ -18,8 +19,12 @@ public sealed partial class IPCSystem
         SubscribeLocalEvent<IPCBrainHolderComponent, AfterInteractUsingEvent>(OnBrainInteractUsing);
         SubscribeLocalEvent<IPCBrainHolderComponent, EntInsertedIntoContainerMessage>(OnInserted);
         SubscribeLocalEvent<IPCBrainHolderComponent, EntRemovedFromContainerMessage>(OnRemoved);
+        SubscribeLocalEvent<IPCBrainHolderComponent, BeingGibbedEvent>(OnBrainGibbed);
         SubscribeLocalEvent<IPCBrainComponent, MindAddedMessage>(OnBrainMindAdded);
     }
+
+    private void OnBrainGibbed(Entity<IPCBrainHolderComponent> ent, ref BeingGibbedEvent args) => 
+        _container.EmptyContainer(ent.Comp.BrainContainerSlot);
 
     private void OnInserted(Entity<IPCBrainHolderComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
@@ -29,7 +34,6 @@ public sealed partial class IPCSystem
             return;
 
         _mind.TransferTo(mindId, ent, mind: mind);
-        UpdateUI(ent);
     }
 
     private void OnRemoved(Entity<IPCBrainHolderComponent> ent, ref EntRemovedFromContainerMessage args)
@@ -40,7 +44,6 @@ public sealed partial class IPCSystem
             return;
 
         _mind.TransferTo(mindId, args.Entity, mind: mind);
-        UpdateUI(ent);
     }
 
     private void OnBrainMindAdded(Entity<IPCBrainComponent> ent, ref MindAddedMessage args)

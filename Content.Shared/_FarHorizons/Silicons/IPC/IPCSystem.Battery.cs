@@ -1,44 +1,44 @@
+using Content.Shared._FarHorizons.Silicons.IPC.Components;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Ninja.Components;
-using Content.Shared.Popups;
-using Content.Shared.PowerCell;
 using Content.Shared.PowerCell.Components;
+using Content.Shared.Verbs;
 using Content.Shared.Wires;
 using Robust.Shared.Containers;
+using Robust.Shared.Utility;
 
 namespace Content.Shared._FarHorizons.Silicons.IPC;
 
 public abstract partial class SharedIPCSystem
 {
-    [Dependency] private readonly ILogManager _logs = default!;
-    protected ISawmill _sawmill = default!;
-
     protected virtual void SetupBattery()
     {
-        _sawmill = _logs.GetSawmill("IPC");
-
         SubscribeLocalEvent<IPCBatteryComponent, ComponentStartup>(OnBatteryStartup);
         SubscribeLocalEvent<IPCBatteryComponent, ItemSlotInsertAttemptEvent>(OnItemSlotInsertAttempt);
         SubscribeLocalEvent<IPCBatteryComponent, ItemSlotEjectAttemptEvent>(OnItemSlotEjectAttempt);
     }
 
-    private void UpdateBattery(float deltaTime)
-    {
-        // When battery runs out, we begin countdown and call events as it's ticking and another event when time has ran out
-        var query = EntityQueryEnumerator<IPCBatteryComponent>();
-        while (query.MoveNext(out var uid, out var comp))
-        {
-            if (!comp.TimerActive)
-                continue;
+    protected abstract void UpdateBattery(float frameTime);
 
-            comp.Timer = Math.Max(comp.Timer - deltaTime, 0f);
-            if (comp.Timer == 0f)
-                comp.TimerActive = false;
-            UpdateBatteryTimer((uid, comp));
-        }
+    private void AddBatteryAltVerbs(GetVerbsEvent<AlternativeVerb> ev)
+    {
+        if (!ev.CanComplexInteract || 
+            !TryComp<IPCBatteryComponent>(ev.User, out var battery) ||
+            !TryComp(ev.Target, out MetaDataComponent? metadata) ||
+            metadata.EntityPrototype == null ||
+            !battery.DrainAllowedTargets.Contains(metadata.EntityPrototype.ID))
+            return;
+
+        AlternativeVerb verb = new()
+        {
+            Act = () => StartDrain((ev.User, battery), ev.Target),
+            Text = Loc.GetString("ipc-drain-power-alt-verb"),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/zap.svg.192dpi.png")),
+        };
+        ev.Verbs.Add(verb);
     }
 
-    protected abstract void UpdateBatteryTimer(Entity<IPCBatteryComponent> ent);
+    protected virtual void StartDrain(Entity<IPCBatteryComponent> user, EntityUid target){}
 
     private void OnItemSlotEjectAttempt(Entity<IPCBatteryComponent> ent, ref ItemSlotEjectAttemptEvent args)
     {
