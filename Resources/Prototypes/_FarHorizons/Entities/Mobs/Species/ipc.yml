@@ -225,3 +225,6 @@
   parent: BaseSpeciesDummy
   id: MobIPCDummy
   categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: IPC

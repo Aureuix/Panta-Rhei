@@ -124,6 +124,11 @@
     left foot:
       part: OrganIPCFootLeft
 
+# Pre-nubody doesn't have OrganBase, we alias it to human organ
+- type: entity
+  id: OrganBase
+  parent: BaseHumanOrgan
+  abstract: true
 
 # Organs
 
@@ -153,6 +158,8 @@
   components:
   - type: Sprite
     sprite: _FarHorizons/Mobs/Species/IPC/organs.rsi
+  - type: Icon # Euph - also specify the icon path
+    sprite: _FarHorizons/Mobs/Species/IPC/organs.rsi
 
 # We dont have visualorgan, visualorganmarkings, limbdamageeffect, organemptarget
 - type: entity
@@ -161,6 +168,8 @@
   abstract: true
   components:
   - type: Sprite
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+  - type: Icon # Euph - also specify the icon path
     sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
 #  - type: VisualOrgan
 #    data:
@@ -475,11 +484,13 @@
 # Organs
 
 - type: entity
-  parent: [ OrganIPCExternal, OrganHumanEyes ] #OrganBaseEyes, OrganIPCInternal, OrganIPCExternal ]
+  parent: [ OrganIPCInternal, OrganHumanEyes ] #OrganBaseEyes, OrganIPCInternal, OrganIPCExternal ]
   id: OrganIPCEyes
   name: Robotic Eyes
   description: "Decidedly not squishy. Kinda sharp, actually."
   components:
+  - type: Icon # Euph, human organs dont specify icons and there's no proper BaseEyes
+    state: eyes
 #  - type: VisualOrgan
 #    data:
 #      sprite: Mobs/Customization/eyes.rsi
@@ -519,11 +530,13 @@
 #    - Inorganic
 
 - type: entity
-  parent: [ OrganHumanHeart, OrganIPCInternal ] # OrganBaseHeart, OrganIPCInternal ]
+  parent: [ OrganIPCInternal, OrganHumanHeart ] # OrganBaseHeart, OrganIPCInternal ]
   id: OrganIPCHeart
   name: Micro Pump
   description: "Circulates coolant in a sickingly familiar way."
   components:
+  - type: Icon # Euph, human organs dont specify icons and there's no proper BaseHeart
+    state: heart-on
   - type: Metabolizer
     maxReagents: 0
   - type: Tag
