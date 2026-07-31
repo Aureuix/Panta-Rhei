@@ -87,8 +87,7 @@
       part: OrganIPCHead
       connections:
       - torso
-      organs:
-#        brain: OrganIPCBrain # idfk?
+      organs: # brain isn't part of the body
         eyes: OrganIPCEyes
     torso:
       part: OrganIPCTorso

@@ -21,20 +21,31 @@
 - type: speciesBaseSprites
   id: MobIPCSprites
   sprites:
-    Head: MobHumanoidAnyMarking # Euph - was MobIPCHead
-    Snout: MobHumanoidAnyMarking # Euph - was MobHumanoidAnyMarking
-    Chest: MobHumanoidAnyMarking # Euph - was MobIPCTorso
-    HeadTop: MobHumanoidAnyMarking # Euph - was MobHumanoidAnyMarking
-    HeadSide: MobHumanoidAnyMarking # Euph - was MobHumanoidAnyMarking
-    Eyes: MobHumanoidAnyMarking # Euph - was MobIPCEyes
-    LArm: MobHumanoidAnyMarking # Euph - was MobIPCLArm
-    RArm: MobHumanoidAnyMarking # Euph - was MobIPCRArm
-    LHand: MobHumanoidAnyMarking # Euph - was MobIPCLHand
-    RHand: MobHumanoidAnyMarking # Euph - was MobIPCRHand
-    LLeg: MobHumanoidAnyMarking # Euph - was MobIPCLLeg
-    RLeg: MobHumanoidAnyMarking # Euph - was MobIPCRLeg
-    LFoot: MobHumanoidAnyMarking # Euph - was MobIPCLFoot
-    RFoot: MobHumanoidAnyMarking # Euph - was MobIPCRFoot
+    Head: MobIPCHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobIPCTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    LArm: MobIPCLArm
+    RArm: MobIPCRArm
+    LHand: MobIPCLHand
+    RHand: MobIPCRHand
+    LLeg: MobIPCLLeg
+    RLeg: MobIPCRLeg
+    LFoot: MobIPCLFoot
+    RFoot: MobIPCRFoot
+    # Begin Euphoria Additions
+    SnoutCover: MobHumanoidAnyMarking
+    Eyes: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
+    Wings: MobHumanoidAnyMarking
+    # End Euphoria Additions
 
 - type: markingPoints
   id: MobIPCMarkingLimits
@@ -64,100 +75,99 @@
       points: 3
       required: false
 
-# May need to use this when we get nubody on Euph
-#- type: humanoidBaseSprite
-#  id: MobIPCEyes
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: light
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCAnyMarking
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCMarkingMatchSkin
-#  markingsMatchSkin: true
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCHead
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: head_m
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCHeadMale
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: head_m
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCHeadFemale
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: head_f
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCTorso
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: torso_m
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCTorsoMale
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: torso_m
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCTorsoFemale
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: torso_f
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCLLeg
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: l_leg
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCLArm
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: l_arm
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCLHand
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: l_hand
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCLFoot
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: l_foot
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCRLeg
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: r_leg
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCRArm
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: r_arm
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCRHand
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: r_hand
-#
-#- type: humanoidBaseSprite
-#  id: MobIPCRFoot
-#  baseSprite:
-#    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
-#    state: r_foot
+- type: humanoidBaseSprite
+  id: MobIPCEyes
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: light
+
+- type: humanoidBaseSprite
+  id: MobIPCAnyMarking
+
+- type: humanoidBaseSprite
+  id: MobIPCMarkingMatchSkin
+  markingsMatchSkin: true
+
+- type: humanoidBaseSprite
+  id: MobIPCHead
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobIPCHeadMale
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobIPCHeadFemale
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobIPCTorso
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobIPCTorsoMale
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobIPCTorsoFemale
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobIPCLLeg
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobIPCLArm
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobIPCLHand
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobIPCLFoot
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobIPCRLeg
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobIPCRArm
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobIPCRHand
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobIPCRFoot
+  baseSprite:
+    sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
+    state: r_foot
