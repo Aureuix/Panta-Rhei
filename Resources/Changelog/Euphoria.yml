@@ -4758,3 +4758,9 @@ Entries:
       message: Non-admin observers can no longer see subtle messages at any range.
   id: 592
   time: '2026-08-01T02:53:38.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: Ninja dash now has a short wind up.
+  id: 593
+  time: '2026-08-01T04:21:32.0000000+00:00'
