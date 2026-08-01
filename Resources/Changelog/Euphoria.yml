@@ -4736,3 +4736,9 @@ Entries:
       message: Shadekin now have black blood by default.
   id: 589
   time: '2026-08-01T02:30:45.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: New moff sounds!
+  id: 590
+  time: '2026-08-01T02:32:08.0000000+00:00'
