@@ -4676,3 +4676,15 @@ Entries:
       message: Enabled hostage implanter in regular uplinks.
   id: 582
   time: '2026-08-01T01:47:41.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Added Lewd Toy Vendor and Lewd Clothing Vendor for mappers to place
+        around dorms and other places.
+    - type: Add
+      message: >-
+        Added restocks for both vendors that logistics can order if the vendor
+        is out of an item.
+  id: 583
+  time: '2026-08-01T01:50:42.0000000+00:00'
