@@ -4722,3 +4722,9 @@ Entries:
       message: The Supersynth is a musician only instrument again.
   id: 587
   time: '2026-08-01T02:18:09.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Accessibility option for grey-only night vision.
+  id: 588
+  time: '2026-08-01T02:28:43.0000000+00:00'
