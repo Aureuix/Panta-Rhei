@@ -4697,3 +4697,14 @@ Entries:
         though. 
   id: 584
   time: '2026-08-01T01:51:44.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Added a few more pre-fabbed and pre-ghost role ready ERT Shuttles for
+        admins to use the Centcomm shipyard to spawn in. Admins, mouse over the
+        button that says Free to see how many roles will spawn.
+    - type: Fix
+      message: Centcomms cryopod room in medical will now have proper power.
+  id: 585
+  time: '2026-08-01T01:52:50.0000000+00:00'
