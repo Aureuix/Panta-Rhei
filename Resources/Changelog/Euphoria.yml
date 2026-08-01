@@ -4716,3 +4716,9 @@ Entries:
         into it.
   id: 586
   time: '2026-08-01T01:58:06.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: The Supersynth is a musician only instrument again.
+  id: 587
+  time: '2026-08-01T02:18:09.0000000+00:00'
