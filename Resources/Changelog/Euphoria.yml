@@ -4708,3 +4708,11 @@ Entries:
       message: Centcomms cryopod room in medical will now have proper power.
   id: 585
   time: '2026-08-01T01:52:50.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        Borgs can enter cryosleep again on their own or if a player puts them
+        into it.
+  id: 586
+  time: '2026-08-01T01:58:06.0000000+00:00'
