@@ -4644,3 +4644,11 @@ Entries:
       message: Anomalites can track their cores again.
   id: 578
   time: '2026-08-01T00:44:23.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Egg Plant seeds (the ones that grow eggs) are back in the MegaSeed
+        Servitor.
+  id: 579
+  time: '2026-08-01T00:45:15.0000000+00:00'
