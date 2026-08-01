@@ -4630,3 +4630,11 @@ Entries:
       message: Banana Honk now requires Vodka to make.
   id: 576
   time: '2026-07-27T08:07:37.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        The portable pump for large spills has been ported from Froniter and is
+        in t2 civilian research.
+  id: 577
+  time: '2026-08-01T00:41:31.0000000+00:00'
