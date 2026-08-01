@@ -4670,3 +4670,9 @@ Entries:
         shouldn't see.
   id: 581
   time: '2026-08-01T01:44:47.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Enabled hostage implanter in regular uplinks.
+  id: 582
+  time: '2026-08-01T01:47:41.0000000+00:00'
