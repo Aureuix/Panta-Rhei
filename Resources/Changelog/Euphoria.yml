@@ -4728,3 +4728,11 @@ Entries:
       message: Accessibility option for grey-only night vision.
   id: 588
   time: '2026-08-01T02:28:43.0000000+00:00'
+- author: ASaltySeabass
+  changes:
+    - type: Add
+      message: Added white and black blood traits.
+    - type: Tweak
+      message: Shadekin now have black blood by default.
+  id: 589
+  time: '2026-08-01T02:30:45.0000000+00:00'
