@@ -4742,3 +4742,11 @@ Entries:
       message: New moff sounds!
   id: 590
   time: '2026-08-01T02:32:08.0000000+00:00'
+- author: Aureuix
+  changes:
+    - type: Add
+      message: >-
+        Adds 9 facial markings from humans to Kitsune and 4 of those markings to
+        IPCs as well.
+  id: 591
+  time: '2026-08-01T02:43:38.0000000+00:00'
