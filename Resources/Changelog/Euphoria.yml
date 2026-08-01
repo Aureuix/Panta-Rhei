@@ -4658,3 +4658,15 @@ Entries:
       message: Smile will be back on maps that have a spawner for them.
   id: 580
   time: '2026-08-01T00:46:52.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now hug and pet plushies, and point your guns at people using
+        new interaction verbs.
+    - type: Fix
+      message: >-
+        Waving at people should no longer expose the evil virtual item you
+        shouldn't see.
+  id: 581
+  time: '2026-08-01T01:44:47.0000000+00:00'
