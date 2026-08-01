@@ -4652,3 +4652,9 @@ Entries:
         Servitor.
   id: 579
   time: '2026-08-01T00:45:15.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Smile will be back on maps that have a spawner for them.
+  id: 580
+  time: '2026-08-01T00:46:52.0000000+00:00'
