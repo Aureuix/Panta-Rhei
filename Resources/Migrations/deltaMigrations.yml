@@ -238,7 +238,8 @@ SentientSmileCore: SpawnMobSmileCore
 HatSpawner: RandomHatSpawner
 
 # 2026-05-16
-ClothingUniformJumpsuitSecBlue : ClothingUniformJumpsuitSecWhite
+# Euph - reverted.
+# ClothingUniformJumpsuitSecBlue : ClothingUniformJumpsuitSecWhite
 
 # 2026-06-22
 PaperStickyNoteStack : PaperStickyNoteStackFilled
