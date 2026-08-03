@@ -531,7 +531,7 @@
   - WardenLongcoat
   - StasecWinterCoatWarden
   - ArmorVestSlim
-  # - WardenArmoredWinterCoat #Disabled during bluesec testing
+  - WardenArmoredWinterCoat
 
 ## Head of Security
 - type: loadoutGroup

@@ -269,11 +269,6 @@
 
 - type: latheRecipe
   parent: BaseHatRecipe
-  id: ClothingHeadHatBeretSecurityGrey
-  result: ClothingHeadHatBeretSecurityGrey
-
-- type: latheRecipe
-  parent: BaseHatRecipe
   id: ClothingHeadHatCapSec
   result: ClothingHeadHatCapSec
 
