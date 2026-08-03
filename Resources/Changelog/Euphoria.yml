@@ -4764,3 +4764,9 @@ Entries:
       message: Ninja dash now has a short wind up.
   id: 593
   time: '2026-08-01T04:21:32.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Display Cases activating.
+  id: 594
+  time: '2026-08-03T12:27:11.0000000+00:00'
