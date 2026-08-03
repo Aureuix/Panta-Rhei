@@ -78,7 +78,7 @@
   description: A metal flask, fit for a hard working HoS.
   components:
   - type: Sprite
-    sprite: _DV/Objects/Consumable/Drinks/hosflask.rsi #DeltaV - Blue Security Resprite
+    sprite: Objects/Consumable/Drinks/hosflask.rsi
 
 - type: entity
   parent: FlaskBase

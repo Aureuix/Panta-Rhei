@@ -10,14 +10,14 @@
     jumpsuit: ClothingUniformJumpskirtWardenGrey
 
 - type: loadout
-  id: WardenJumpsuitWhite
+  id: WardenJumpsuitBlue
   equipment:
-    jumpsuit: ClothingUniformJumpsuitWardenWhite
+    jumpsuit: ClothingUniformJumpsuitWardenBlue
 
 - type: loadout
-  id: WardenJumpskirtWhite
+  id: WardenJumpskirtBlue
   equipment:
-    jumpsuit: ClothingUniformJumpskirtWardenWhite
+    jumpsuit: ClothingUniformJumpskirtWardenBlue
 
 - type: loadout
   id: WardenTurtlesuit

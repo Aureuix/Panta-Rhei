@@ -1514,13 +1514,13 @@
   - HeadofSecurityTurtleneckSkirt
   - HeadofSecurityFormalSuit
   - HeadofSecurityFormalSkirt
-  # - HeadofSecurityParadeSuit # DeltaV - disabled for bluesec
-  # - HeadofSecurityParadeSkirt # DeltaV - disabled for bluesec
+  - HeadofSecurityParadeSuit
+  - HeadofSecurityParadeSkirt
   # Begin DeltaV changes
   - HeadofSecurityJumpsuitGrey
   - HeadofSecurityJumpskirtGrey
-  - HeadofSecurityJumpsuitWhite
-  - HeadofSecurityJumpskirtWhite
+  - HeadofSecurityJumpsuitBlue
+  - HeadofSecurityJumpskirtBlue
   # End DeltaV changes
 
 - type: loadoutGroup
@@ -1532,7 +1532,7 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   # Begin DeltaV changes
-  - ScarfBlue
+  - ScarfRed
   - ScarfBlack
   - SecurityPoncho
   - HeadOfSecurityRobe
@@ -1586,8 +1586,8 @@
   # Begin DeltaV additions
   - WardenJumpsuitGrey
   - WardenJumpskirtGrey
-  - WardenJumpsuitWhite
-  - WardenJumpskirtWhite
+  - WardenJumpsuitBlue
+  - WardenJumpskirtBlue
   - WardenTurtlesuit
   - WardenTurtleskirt
   # End DeltaV additions
@@ -1616,7 +1616,6 @@
   minLimit: 0
   loadouts:
   - SecurityHelmet
-  - SecurityCap # DeltaV
   - SecurityBeret
 #  - SecurityHat # DeltaV - removed for incongruence
 #  - MimeHead # DeltaV - Red Beret | removed for incongruence
@@ -1631,8 +1630,8 @@
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
   # Begin DeltaV changes
-  - SecurityJumpsuitWhite
-  - SecurityJumpskirtWhite
+  - SecurityJumpsuitBlue
+  - SecurityJumpskirtBlue
 #  - SeniorOfficerJumpsuit # Removed for incongruence
 #  - SeniorOfficerJumpskirt # Removed for incongruence
   - SeniorSecOfficerTurtlesuit
@@ -1711,7 +1710,7 @@
   minLimit: 0
   loadouts:
   - DetectiveTie
-  - ScarfBlue # DeltaV - Was ScarfRed
+  - ScarfRed # DeltaV
   - SecurityPoncho # DeltaV
 
 - type: loadoutGroup
@@ -1745,8 +1744,8 @@
   parent: [FloofSecurityOfficerJumpsuit, FloofJumpsuits] # Floofstation
   name: loadout-group-security-cadet-jumpsuit
   loadouts:
-  - SecurityCadetJumpsuit # DeltaV - was RedJumpsuit
-  - SecurityCadetJumpskirt # DeltaV - was RedJumpskirt
+  - RedJumpsuit
+  - RedJumpskirt
 
 - type: loadoutGroup
   id: SecurityCadetJobTrinkets

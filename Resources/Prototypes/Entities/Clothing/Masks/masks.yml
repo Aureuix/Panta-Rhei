@@ -416,9 +416,9 @@
   description: A elite issue Security gas mask.
   components:
   - type: Sprite
-    sprite: _DV/Clothing/Mask/swat.rsi # DeltaV - Blue Security Resprite
+    sprite: Clothing/Mask/swat.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Mask/swat.rsi # DeltaV - Blue Security Resprite
+    sprite: Clothing/Mask/swat.rsi
   - type: Tag
     tags:
     - WhitelistChameleon

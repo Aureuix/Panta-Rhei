@@ -631,7 +631,7 @@
   id: JobSecurityCadet
   parent: JobBaseLoadout # Floofstation
   groups:
-  - SecurityCadetHead # DeltaV
+  - SecurityHead # DeltaV
   - SecurityNeck # DeltaV
   - SecurityGloves # DeltaV - Security can start with gloves
   - SecurityCadetJumpsuit

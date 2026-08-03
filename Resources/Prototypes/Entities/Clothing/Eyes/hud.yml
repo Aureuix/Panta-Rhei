@@ -79,9 +79,9 @@
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
   components:
   - type: Sprite
-    sprite: _DV/Clothing/Eyes/Hud/sec.rsi # DeltaV - blue hud sprite
+    sprite: Clothing/Eyes/Hud/sec.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Eyes/Hud/sec.rsi # DeltaV - blue hud sprite
+    sprite: Clothing/Eyes/Hud/sec.rsi
   - type: Tag
     tags:
     - HudSecurity
@@ -193,9 +193,9 @@
   description: An eye display that looks like a mixture of medical and security huds.
   components:
   - type: Sprite
-    sprite: _DV/Clothing/Eyes/Hud/medsec.rsi # DeltaV - blue hud sprite
+    sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Eyes/Hud/medsec.rsi # DeltaV - blue hud sprite
+    sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: Construction
     graph: HudMedSec
     node: medsecHud
@@ -308,9 +308,9 @@
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records. For true patriots.
   components:
   - type: Sprite
-    sprite: _DV/Clothing/Eyes/Hud/secpatch.rsi # DeltaV - blue hud sprite
+    sprite: Clothing/Eyes/Hud/secpatch.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Eyes/Hud/secpatch.rsi # DeltaV - blue hud sprite
+    sprite: Clothing/Eyes/Hud/secpatch.rsi
   - type: Tag
     tags:
     - PetWearable

@@ -175,8 +175,8 @@
         # Jumpsuits
         - id: ClothingUniformJumpskirtHosFormal
         - id: ClothingUniformJumpsuitHosFormal
-        - id: ClothingUniformJumpskirtHoSTurtle
-        - id: ClothingUniformJumpsuitHoSTurtle
+        - id: ClothingUniformJumpskirtHoSAlt
+        - id: ClothingUniformJumpsuitHoSAlt
         # Hats
         - id: ClothingHeadHatBeretHoS
         - id: ClothingHeadHatHoshat

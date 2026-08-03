@@ -21,7 +21,7 @@
       components:
         - GasTank # DeltaV
         - BreathMask
-        - Injector # DeltaV
+        - Injector # Deltav
     maxItemSize: Small
     grid:
     - 0,0,3,1

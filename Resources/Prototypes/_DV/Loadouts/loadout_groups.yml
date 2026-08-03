@@ -293,9 +293,9 @@
   name: loadout-group-brig-medic-neck
   minLimit: 0
   loadouts:
+  - ScarfRed
   - ScarfBlack
   - ScarfBlue
-  - ScarfLightBlue
   - SecurityPoncho
 
 - type: loadoutGroup
@@ -369,8 +369,7 @@
   name: loadout-group-security-cadet-head
   minLimit: 0
   loadouts:
-  - SecurityCadetBeret
-  - SecurityCadetCap
+  - MimeHead
 
 ## Security Guns
 - type: loadoutGroup
@@ -504,7 +503,7 @@
   name: loadout-group-security-neck
   minLimit: 0
   loadouts:
-  - ScarfBlue
+  - ScarfRed
   - ScarfBlack
   - SecurityPoncho
 
