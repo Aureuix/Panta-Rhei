@@ -1043,6 +1043,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             // End DeltaV - block listening
 
             var observer = ghostHearing.HasComponent(playerEntity);
+            var isDead = HasComp<GhostComponent>(playerEntity);
 
             // Floofstation edit - check LOS
             sourceCoords.TryDistance(EntityManager, transformEntity.Coordinates, out var distance);
@@ -1051,9 +1052,10 @@ public sealed partial class ChatSystem : SharedChatSystem
             // Floofstation edit end
 
             // even if they are a ghost hearer, in some situations we still need the range
-            if (distance < voiceGetRange)
+            if (distance < voiceGetRange && !observer)
             {
-                recipients.Add(player, new ICChatRecipientData(distance, observer, InLOS: isVisible));
+                // Euphoria | Hide Subtle from Non-Admin Ghosts
+                recipients.Add(player, new ICChatRecipientData(distance, observer, Subtle: !isDead, InLOS: isVisible));
                 continue;
             }
 
@@ -1066,7 +1068,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     }
 
     // Floofstation: add inLOS
-    public readonly record struct ICChatRecipientData(float Range, bool Observer, bool? HideChatOverride = null, bool InLOS = true)
+    public readonly record struct ICChatRecipientData(float Range, bool Observer, bool? HideChatOverride = null, bool Subtle = true, bool InLOS = true)
     {
     }
 

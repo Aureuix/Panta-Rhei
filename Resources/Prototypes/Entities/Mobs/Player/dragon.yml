@@ -181,6 +181,7 @@
     - Xeno
     - TauCetiBasic
     naturalLanguage: Xeno
+  - type: AntiRottingContainer
 
 - type: entity
   parent: BaseMobDragon
