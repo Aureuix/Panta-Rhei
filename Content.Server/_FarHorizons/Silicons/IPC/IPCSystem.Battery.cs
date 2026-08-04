@@ -17,7 +17,7 @@ public sealed partial class IPCSystem
     protected override void SetupBattery()
     {
         base.SetupBattery();
-        
+
         SubscribeLocalEvent<IPCBatteryComponent, PowerCellChangedEvent>((uid, comp, ev) => UpdateDeathTimer((uid, comp), ev));
         SubscribeLocalEvent<IPCBatteryComponent, ChargeChangedEvent>((uid, comp, _) => UpdateDeathTimer((uid, comp)));
         SubscribeLocalEvent<IPCBatteryComponent, BatteryStateChangedEvent>((uid, comp, _) => UpdateDeathTimer((uid, comp)));
@@ -41,9 +41,7 @@ public sealed partial class IPCSystem
     }
     private void OnBatteryTimerEnd(Entity<IPCBatteryComponent> ent, ref IPCBatteryDeathTimerEnd args)
     {
-        if (ent.Comp.Playing == null)
-            return;
-
+        // Euph - original ai-generated code used to do nothing if there was no audio
         _audio.Stop(ent.Comp.Playing, ent.Comp.Playing?.Comp);
         ent.Comp.Playing = null;
 
@@ -106,7 +104,7 @@ public sealed partial class IPCSystem
             StartDeathTimer(ent);
         else
             StopDeathTimer(ent);
-        
+
         if (slotChangedEv != null && !slotChangedEv.Value.Ejected)
             _drainer.SetBattery((ent, ent.Comp.BatteryDrainer), ent.Comp.BatteryContainerSlot.ContainedEntity);
     }
@@ -114,11 +112,11 @@ public sealed partial class IPCSystem
     public void StartDeathTimer(Entity<IPCBatteryComponent> ent){
         if (ent.Comp.TimerActive)
             return;
-        
-        if (_powerCell.TryGetBatteryFromSlot(ent.Owner, out var battery) && 
+
+        if (_powerCell.TryGetBatteryFromSlot(ent.Owner, out var battery) &&
             (battery.Value.Comp.State != BatteryState.Empty || TryComp<BatterySelfRechargerComponent>(battery, out _)))
             return;
-        
+
         ent.Comp.TimerActive = true;
         ent.Comp.WarningsIssued = 0;
         ent.Comp.Timer = ent.Comp.DieWithoutPowerAfter;
@@ -128,7 +126,7 @@ public sealed partial class IPCSystem
     public void StopDeathTimer(Entity<IPCBatteryComponent> ent){
         if (!ent.Comp.TimerActive)
             return;
-        
+
         ent.Comp.TimerActive = false;
         ent.Comp.WarningsIssued = 0;
         RaiseLocalEvent(ent, new IPCBatteryDeathTimerEnd(ent.Comp.Timer != 0f));
@@ -165,7 +163,7 @@ public sealed partial class IPCSystem
         if (!Resolve(ent, ref ent.Comp) ||
             ent.Comp.BatteryContainerSlot.ContainedEntity == null)
             return;
-        
+
         var battery = ent.Comp.BatteryContainerSlot.ContainedEntity.Value;
         _container.EmptyContainer(ent.Comp.BatteryContainerSlot);
 

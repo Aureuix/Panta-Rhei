@@ -131,6 +131,8 @@
     warningSound:
       params:
         loop: true
+        volume: -10 # Euph - make the fuckass alert quieter and limited in range
+        maxDistance: 4
       path: /Audio/_FarHorizons/Effects/Alerts/healthpanel-alert.ogg
     drainAllowedTargets:
     - APCBasic
@@ -182,6 +184,8 @@
     damagedSound:
       params:
         loop: true
+        volume: -10 # Euph - make the fuckass alert quieter and limited in range
+        maxDistance: 4
       path: /Audio/_FarHorizons/Effects/Alerts/healthpanel-alert.ogg
     damagedThreshold:
       min: 85
