@@ -19,7 +19,7 @@ public sealed partial class DCCVars
 
     public static readonly CVarDef<string> RadioColorSecurity =
         CVarDef.Create("deltav.options.radio.security_color",
-            "#8c93f5",
+            "#ff4242", // Euph - default is red.
             CVar.CLIENTONLY | CVar.ARCHIVE,
             "The color of the Security radio channel.");
 
