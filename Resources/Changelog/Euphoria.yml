@@ -4815,3 +4815,9 @@ Entries:
       message: DigestionSystem. Only reachable with a consent toggle
   id: 600
   time: '2026-08-05T08:25:51.0000000+00:00'
+- author: badlanduser
+  changes:
+    - type: Tweak
+      message: Super Synth can now be worn on belt slots
+  id: 601
+  time: '2026-08-05T08:42:07.0000000+00:00'
