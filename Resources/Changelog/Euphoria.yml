@@ -4795,3 +4795,11 @@ Entries:
       message: The bunny tail can now wag.
   id: 597
   time: '2026-08-05T08:16:38.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Meet meat buns now made of meat. Feroxis and lizards can now eat meat
+        buns. 
+  id: 598
+  time: '2026-08-05T08:18:57.0000000+00:00'
