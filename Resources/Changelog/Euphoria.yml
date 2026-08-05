@@ -4809,3 +4809,9 @@ Entries:
       message: Removed Chief Justice Kobold and Availi HOP plushies.
   id: 599
   time: '2026-08-05T08:23:26.0000000+00:00'
+- author: JaDiDo
+  changes:
+    - type: Add
+      message: DigestionSystem. Only reachable with a consent toggle
+  id: 600
+  time: '2026-08-05T08:25:51.0000000+00:00'
