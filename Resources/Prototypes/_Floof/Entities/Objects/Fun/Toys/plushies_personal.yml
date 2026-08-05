@@ -1902,4 +1902,3 @@
     sound: *fox13
   - type: MeleeWeapon
     soundHit: *fox13
-    
