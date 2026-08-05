@@ -4776,3 +4776,16 @@ Entries:
       message: Added Mayo packet
   id: 595
   time: '2026-08-03T12:29:04.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged upstream changes up to the 2026-06-29th. See the in-game chanelog
+        for more details.
+    - type: Add
+      message: >-
+        The EE IPC species have been replaced with ones ported from FarHorizons.
+        There's a lot of differences. Some characters may or may not need to be
+        remade.
+  id: 596
+  time: '2026-08-05T08:07:52.0000000+00:00'
