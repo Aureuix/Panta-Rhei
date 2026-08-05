@@ -4803,3 +4803,9 @@ Entries:
         buns. 
   id: 598
   time: '2026-08-05T08:18:57.0000000+00:00'
+- author: Jakumba
+  changes:
+    - type: Remove
+      message: Removed Chief Justice Kobold and Availi HOP plushies.
+  id: 599
+  time: '2026-08-05T08:23:26.0000000+00:00'
