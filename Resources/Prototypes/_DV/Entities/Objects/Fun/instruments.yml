@@ -67,9 +67,6 @@
     sprite: _DV/Objects/Fun/Instruments/redsupersynth.rsi
     state: bloodredsynth
   - type: Clothing
-    quickEquip: false
-    slots:
-    - neck
     sprite: _DV/Objects/Fun/Instruments/redsupersynth.rsi
   - type: Item
     heldPrefix: bloodredsynth
