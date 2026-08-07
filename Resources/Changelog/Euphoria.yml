@@ -4847,3 +4847,11 @@ Entries:
         fingerprints, and leave fibers.
   id: 604
   time: '2026-08-07T05:52:22.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Bluespace cigars are now back in stock in loadouts.
+    - type: Add
+      message: Delight Packs have have also been added to loadouts.
+  id: 605
+  time: '2026-08-07T07:25:33.0000000+00:00'
