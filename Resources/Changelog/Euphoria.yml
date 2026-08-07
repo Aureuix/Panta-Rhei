@@ -4861,3 +4861,11 @@ Entries:
       message: Telepathic trait!
   id: 606
   time: '2026-08-07T07:31:16.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Remove
+      message: >-
+        Temporaarily removed the RevealRevenantOnCollide from mobs to fix Door
+        stuck.
+  id: 607
+  time: '2026-08-07T08:21:46.0000000+00:00'
