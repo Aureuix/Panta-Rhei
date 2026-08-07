@@ -4855,3 +4855,9 @@ Entries:
       message: Delight Packs have have also been added to loadouts.
   id: 605
   time: '2026-08-07T07:25:33.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Telepathic trait!
+  id: 606
+  time: '2026-08-07T07:31:16.0000000+00:00'
