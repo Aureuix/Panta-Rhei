@@ -4875,3 +4875,9 @@ Entries:
       message: Dewalrussed the sprite atlas.
   id: 608
   time: '2026-08-08T02:05:22.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Fourty new types of bunnysuits now available!
+  id: 609
+  time: '2026-08-08T02:08:24.0000000+00:00'
