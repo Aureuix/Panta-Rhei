@@ -4915,3 +4915,11 @@ Entries:
       message: More roles can select eyewear in loadouts.
   id: 613
   time: '2026-08-09T04:43:17.0000000+00:00'
+- author: civilCornball
+  changes:
+    - type: Fix
+      message: >-
+        Shadekin are now potential psionics and can receive telepathic messages
+        from The Oracle!
+  id: 614
+  time: '2026-08-09T05:04:09.0000000+00:00'
