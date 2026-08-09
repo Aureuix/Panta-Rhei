@@ -4887,3 +4887,11 @@ Entries:
       message: You can now actually play the game!
   id: 610
   time: '2026-08-08T08:44:36.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Tweak
+      message: >-
+        Guidebook to blatantly instruct all antags that anything they do needs
+        to follow the rules.
+  id: 611
+  time: '2026-08-09T04:23:09.0000000+00:00'
