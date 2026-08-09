@@ -4907,3 +4907,11 @@ Entries:
       message: Belts now render over tails.
   id: 612
   time: '2026-08-09T04:34:51.0000000+00:00'
+- author: sprkl and Baximus
+  changes:
+    - type: Add
+      message: Tajaran veils have arrived!
+    - type: Tweak
+      message: More roles can select eyewear in loadouts.
+  id: 613
+  time: '2026-08-09T04:43:17.0000000+00:00'
