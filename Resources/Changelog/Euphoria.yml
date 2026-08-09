@@ -4923,3 +4923,9 @@ Entries:
         from The Oracle!
   id: 614
   time: '2026-08-09T05:04:09.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Add
+      message: The Food Critic now has objectives.
+  id: 615
+  time: '2026-08-09T06:46:27.0000000+00:00'
