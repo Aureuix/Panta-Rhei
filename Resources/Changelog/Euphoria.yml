@@ -4895,3 +4895,15 @@ Entries:
         to follow the rules.
   id: 611
   time: '2026-08-09T04:23:09.0000000+00:00'
+- author: DoubleHypercube
+  changes:
+    - type: Add
+      message: Over twenty new wing markings!
+    - type: Tweak
+      message: Wings now render UNDER tails.
+    - type: Tweak
+      message: You can now have five wings instead of just one.
+    - type: Tweak
+      message: Belts now render over tails.
+  id: 612
+  time: '2026-08-09T04:34:51.0000000+00:00'
