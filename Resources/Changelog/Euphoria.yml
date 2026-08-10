@@ -4935,3 +4935,9 @@ Entries:
       message: IPC minimum age is now 18
   id: 616
   time: '2026-08-10T07:08:08.0000000+00:00'
+- author: Eagle0600
+  changes:
+    - type: Fix
+      message: Captains can start with their thigh-highs and thongs again.
+  id: 617
+  time: '2026-08-10T09:13:12.0000000+00:00'
