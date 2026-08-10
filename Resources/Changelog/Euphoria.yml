@@ -4941,3 +4941,9 @@ Entries:
       message: Captains can start with their thigh-highs and thongs again.
   id: 617
   time: '2026-08-10T09:13:12.0000000+00:00'
+- author: CastitoWae
+  changes:
+    - type: Tweak
+      message: Re-Buffed tritium burns.
+  id: 618
+  time: '2026-08-10T13:01:09.0000000+00:00'
