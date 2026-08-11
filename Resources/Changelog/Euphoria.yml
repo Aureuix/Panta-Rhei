@@ -4978,3 +4978,9 @@ Entries:
         round-removed or not.
   id: 621
   time: '2026-08-11T10:54:51.0000000+00:00'
+- author: Aureuix
+  changes:
+    - type: Tweak
+      message: Changed the time reqs on some ghostrole antags to be easier to play.
+  id: 622
+  time: '2026-08-11T10:57:20.0000000+00:00'
