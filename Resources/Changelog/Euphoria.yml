@@ -4992,3 +4992,11 @@ Entries:
         shoes).
   id: 623
   time: '2026-08-11T14:58:48.0000000+00:00'
+- author: NoirRenard
+  changes:
+    - type: Tweak
+      message: >-
+        patched issues for glacier such as missing air alarms, LV cables and
+        vends.
+  id: 624
+  time: '2026-08-12T12:54:14.0000000+00:00'
