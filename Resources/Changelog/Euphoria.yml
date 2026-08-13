@@ -5022,3 +5022,11 @@ Entries:
       message: Removed components from the small reactor flatpack
   id: 627
   time: '2026-08-13T08:46:41.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        Moth Roaches, Mop Roaches, Cock Roaches and Nukie Mice can now vent
+        crawl.
+  id: 628
+  time: '2026-08-13T08:49:32.0000000+00:00'
