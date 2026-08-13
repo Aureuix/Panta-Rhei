@@ -5016,3 +5016,9 @@ Entries:
       message: Condom hats I refuse to elaborate more.
   id: 626
   time: '2026-08-13T08:44:50.0000000+00:00'
+- author: CastitoWae
+  changes:
+    - type: Fix
+      message: Removed components from the small reactor flatpack
+  id: 627
+  time: '2026-08-13T08:46:41.0000000+00:00'
