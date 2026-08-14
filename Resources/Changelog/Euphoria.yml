@@ -5044,3 +5044,11 @@ Entries:
       message: Socks should now be drawn above underwear.
   id: 630
   time: '2026-08-14T12:28:54.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        The Salvage Reclaimer shuttle has been spotted in use again on Asterisk,
+        Edge and Pebble.
+  id: 631
+  time: '2026-08-14T13:58:49.0000000+00:00'
