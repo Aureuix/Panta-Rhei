@@ -5058,3 +5058,22 @@ Entries:
       message: The Syndicate channel will no longer show up in examines.
   id: 632
   time: '2026-08-15T03:59:52.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: The language menu now allows you to reorder languages.
+    - type: Add
+      message: >-
+        You can now use index-based language prefixes. For example, typing "^1
+        hello" will send "Hello." using the first language in the list of
+        languages that you can speak. Typing "^2; hello" will send "Hello." over
+        the common radio using the second language.
+    - type: Fix
+      message: >-
+        Language prefixes now correctly display in the chat, and using an
+        invalid prefix will result in your message being ignored (to avoid
+        breaking immersion). 
+    - type: Fix
+      message: Entities without LanguageSpeaker should now understand everyone.
+  id: 633
+  time: '2026-08-15T04:11:26.0000000+00:00'
