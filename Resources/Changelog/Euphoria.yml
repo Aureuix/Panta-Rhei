@@ -5052,3 +5052,9 @@ Entries:
         Edge and Pebble.
   id: 631
   time: '2026-08-14T13:58:49.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The Syndicate channel will no longer show up in examines.
+  id: 632
+  time: '2026-08-15T03:59:52.0000000+00:00'
