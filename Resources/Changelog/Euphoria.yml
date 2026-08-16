@@ -5089,3 +5089,12 @@ Entries:
       message: Ported the RPD (Rapid Pipe Dispenser)
   id: 635
   time: '2026-08-15T04:14:14.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Fix
+      message: >-
+        Resomi now explicitly use displacement maps for underwear and
+        outerclothing. This means that most items will hug resomi bodies more
+        closely.
+  id: 636
+  time: '2026-08-16T05:54:37.0000000+00:00'
