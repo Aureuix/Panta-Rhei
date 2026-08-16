@@ -5119,3 +5119,9 @@ Entries:
         to ROE and general situations. Playing to win goes against the rules.
   id: 637
   time: '2026-08-16T06:43:00.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Hitman now only targets Marked individuals.
+  id: 638
+  time: '2026-08-16T11:19:27.0000000+00:00'
