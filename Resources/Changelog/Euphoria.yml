@@ -5098,3 +5098,24 @@ Entries:
         closely.
   id: 636
   time: '2026-08-16T05:54:37.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Add
+      message: >-
+        New Rule 11.9: Dorms is a antagonist free zone, no antag-related
+        activities of any kind may take place within dorms. If you are unsure if
+        your scene or idea is antagonist related, a-help first.
+    - type: Add
+      message: >-
+        New Rule 10.6: Security may breach dorms in regards to SOP related
+        matters if it is found someone from a previous crime is hiding within
+        (ERP'ing or in a scene), if this needs to be done. A-help first to get
+        admin assistance so you have the correct dorm.
+    - type: Tweak
+      message: >-
+        Rule 10.4 to read as: Sectexting or better known as security power
+        gaming is not tolerated. Security falls under the same purview as
+        antagonists. Attempt to roleplay, speak with, and follow SOP in regards
+        to ROE and general situations. Playing to win goes against the rules.
+  id: 637
+  time: '2026-08-16T06:43:00.0000000+00:00'
