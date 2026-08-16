@@ -5149,3 +5149,11 @@ Entries:
       message: Certain markings on IPCs should work now.
   id: 642
   time: '2026-08-16T12:13:23.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Changed Scurret crate from 25,000 to 10,000. Also made Animal translator
+        translate Scurret instead of ScugSign.
+  id: 643
+  time: '2026-08-16T12:13:52.0000000+00:00'
