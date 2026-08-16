@@ -5125,3 +5125,9 @@ Entries:
       message: Hitman now only targets Marked individuals.
   id: 638
   time: '2026-08-16T11:19:27.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Tweak
+      message: 'Re-enabled paramedic voidsuit siren. '
+  id: 639
+  time: '2026-08-16T11:21:46.0000000+00:00'
