@@ -5137,3 +5137,9 @@ Entries:
       message: IPCs no longer have heelies.
   id: 640
   time: '2026-08-16T11:24:37.0000000+00:00'
+- author: Arbitrated
+  changes:
+    - type: Tweak
+      message: Histamine deals less damage per second and metabolizes much more slowly.
+  id: 641
+  time: '2026-08-16T12:11:09.0000000+00:00'
