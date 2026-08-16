@@ -5131,3 +5131,9 @@ Entries:
       message: 'Re-enabled paramedic voidsuit siren. '
   id: 639
   time: '2026-08-16T11:21:46.0000000+00:00'
+- author: torturedbymemes
+  changes:
+    - type: Tweak
+      message: IPCs no longer have heelies.
+  id: 640
+  time: '2026-08-16T11:24:37.0000000+00:00'
