@@ -5143,3 +5143,9 @@ Entries:
       message: Histamine deals less damage per second and metabolizes much more slowly.
   id: 641
   time: '2026-08-16T12:11:09.0000000+00:00'
+- author: torturedbymemes
+  changes:
+    - type: Fix
+      message: Certain markings on IPCs should work now.
+  id: 642
+  time: '2026-08-16T12:13:23.0000000+00:00'
