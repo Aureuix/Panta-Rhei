@@ -5157,3 +5157,9 @@ Entries:
         translate Scurret instead of ScugSign.
   id: 643
   time: '2026-08-16T12:13:52.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Two new nosebleed traits have been added.
+  id: 644
+  time: '2026-08-17T10:28:53.0000000+00:00'
