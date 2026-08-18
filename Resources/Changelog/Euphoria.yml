@@ -5171,3 +5171,9 @@ Entries:
         departments.
   id: 645
   time: '2026-08-18T09:18:49.0000000+00:00'
+- author: ASaltySeabass
+  changes:
+    - type: Tweak
+      message: Lamplight now affects moths and non-moths as intended.
+  id: 646
+  time: '2026-08-18T11:48:42.0000000+00:00'
