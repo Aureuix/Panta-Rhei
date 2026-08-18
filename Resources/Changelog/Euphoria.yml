@@ -5163,3 +5163,11 @@ Entries:
       message: Two new nosebleed traits have been added.
   id: 644
   time: '2026-08-17T10:28:53.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Tweak
+      message: >-
+        Late Joins are now announced in Common rather than their respective
+        departments.
+  id: 645
+  time: '2026-08-18T09:18:49.0000000+00:00'
