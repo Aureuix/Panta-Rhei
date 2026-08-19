@@ -5209,3 +5209,19 @@ Entries:
       message: Various clown and mime facepaint markings.
   id: 650
   time: '2026-08-19T12:06:50.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Add
+      message: >-
+        Added a DNA Scrambler implanter/implant variant that will despawn if not
+        used. within 2 minutes. 
+    - type: Tweak
+      message: >-
+        Changed many ghost roles (Ninja, LPO, all Nukies (including LoneOp),
+        Syndie Recruit, Syndie Arms Dealer, Synthesis Specialist, Hitman) to not
+        have randomized appearances, and spawn with my optional "despawning" DNA
+        Scrambler implanter in-hand. You can choose whether to be your
+        character, or a use the scrambler to be a randomized character. You have
+        2 minutes to decide before the implanter/implant despawns.
+  id: 651
+  time: '2026-08-19T14:10:58.0000000+00:00'
