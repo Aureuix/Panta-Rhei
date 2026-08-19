@@ -5185,3 +5185,9 @@ Entries:
         ones instead.
   id: 647
   time: '2026-08-19T12:01:06.0000000+00:00'
+- author: Eagle0600
+  changes:
+    - type: Tweak
+      message: Skirts and nudity permits no longer block underwear bottom slots
+  id: 648
+  time: '2026-08-19T12:03:52.0000000+00:00'
