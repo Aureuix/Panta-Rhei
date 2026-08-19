@@ -5191,3 +5191,11 @@ Entries:
       message: Skirts and nudity permits no longer block underwear bottom slots
   id: 648
   time: '2026-08-19T12:03:52.0000000+00:00'
+- author: Arbitrated
+  changes:
+    - type: Tweak
+      message: >-
+        Radiation Collector Crates hold 2 collectors instead of 1, and price has
+        been adjusted accordingly. Cargo Techs rejoice!
+  id: 649
+  time: '2026-08-19T12:05:29.0000000+00:00'
