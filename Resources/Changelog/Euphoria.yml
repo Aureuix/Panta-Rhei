@@ -5177,3 +5177,11 @@ Entries:
       message: Lamplight now affects moths and non-moths as intended.
   id: 646
   time: '2026-08-18T11:48:42.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Full-tile tiny fans are now hidden from the spawn menu. Use directional
+        ones instead.
+  id: 647
+  time: '2026-08-19T12:01:06.0000000+00:00'
