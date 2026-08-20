@@ -5241,3 +5241,11 @@ Entries:
       message: The snoring trait is back.
   id: 653
   time: '2026-08-20T10:32:25.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Autolabelers will now be off by default, you can toggle them on if you
+        wish to use them.
+  id: 654
+  time: '2026-08-20T10:33:07.0000000+00:00'
