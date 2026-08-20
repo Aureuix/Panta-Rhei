@@ -5225,3 +5225,13 @@ Entries:
         2 minutes to decide before the implanter/implant despawns.
   id: 651
   time: '2026-08-19T14:10:58.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: The Rickenbacker  to passenger instrument loadouts
+    - type: Add
+      message: The portable disc jockey control system is in musicians job trinkets
+    - type: Tweak
+      message: The banjo can be swung like other guitars
+  id: 652
+  time: '2026-08-20T10:31:36.0000000+00:00'
