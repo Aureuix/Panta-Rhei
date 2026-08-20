@@ -5235,3 +5235,9 @@ Entries:
       message: The banjo can be swung like other guitars
   id: 652
   time: '2026-08-20T10:31:36.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: The snoring trait is back.
+  id: 653
+  time: '2026-08-20T10:32:25.0000000+00:00'
