@@ -5269,3 +5269,15 @@ Entries:
       message: Smile should be able to eat and drink again.
   id: 657
   time: '2026-08-22T02:36:36.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        Moved engineering's welding masks to the right equipment slot when
+        chosen.
+    - type: Fix
+      message: Vox specific breath mask options given to clown, corpsman and mime
+    - type: Fix
+      message: Gives reporter undergarment selection
+  id: 658
+  time: '2026-08-22T02:38:05.0000000+00:00'
