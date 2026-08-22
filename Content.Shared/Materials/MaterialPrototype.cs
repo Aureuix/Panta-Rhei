@@ -1,5 +1,5 @@
-using Robust.Shared.Prototypes;
 using Content.Shared._FarHorizons.Materials; //Far Horizons Nuclear Reactor Port
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 using Robust.Shared.Utility;
 

@@ -346,7 +346,7 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
             reactorPart.MeltHealth -= _random.Next(10, 50 + 1);
         if (reactorPart.MeltHealth <= 0)
             Melt(reactorPart, reactorEnt, reactorSystem);
-
+        
         return;
 
         // I would really like for these to be defined by the MaterialPrototype, like GasReactionPrototype, but it caused the client and server to fight when I tried
@@ -370,7 +370,7 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
                 return;
 
             var molesPerUnit = 100f; // Arbitrary value for how much gaseous plasma is in each unit of active plasma
-
+            
             var payload = new GasMixture();
             payload.SetMoles(Gas.Plasma, (float)Math.Min(part.Properties.ActivePlasma * molesPerUnit, Math.Log(((part.Temperature - temperatureThreshold) / 100) + 1)));
             payload.Temperature = part.Temperature;
@@ -380,7 +380,7 @@ public sealed class ReactorPartSystem : SharedReactorPartSystem
             _atmosphereSystem.Merge(reactor.AirContents, payload);
         }
     }
-
+    
     /// <summary>
     /// Melts the related ReactorPart.
     /// </summary>

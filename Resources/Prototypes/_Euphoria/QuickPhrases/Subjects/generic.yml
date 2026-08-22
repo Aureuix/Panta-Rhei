@@ -68,6 +68,22 @@
   id: GalpolPhrase
   parent: BaseSubjectPhrase
   text: phrase-galpol
+
+- type: quickPhrase
+  id: FederalPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-federal
+
+- type: quickPhrase
+  id: AgentPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-agent
+
+- type: quickPhrase
+  id: ArmyPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-army
+
 ## Relations & Identity
 - type: quickPhrase
   id: FriendPhrase
@@ -248,6 +264,11 @@
   id: RelativePhrase
   parent: BaseSubjectPhrase
   text: phrase-relative
+
+- type: quickPhrase
+  id: OffspringPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-offspring
 ## Misc
 - type: quickPhrase
   id: MoneyPhrase
@@ -303,6 +324,101 @@
   id: MagicPhrase
   parent: BaseSubjectPhrase
   text: phrase-magic
+
+- type: quickPhrase
+  id: PregnantPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-pregnant
+
+- type: quickPhrase
+  id: SoPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-so
+
+- type: quickPhrase
+  id: AndPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-and
+
+- type: quickPhrase
+  id: AllDonePhrase
+  parent: BaseSubjectPhrase
+  text: phrase-all-done
+
+- type: quickPhrase
+  id: OrPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-or
+
+- type: quickPhrase
+  id: ButPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-but
+
+- type: quickPhrase
+  id: LikePhrase
+  parent: BaseSubjectPhrase
+  text: phrase-like
+
+- type: quickPhrase
+  id: IsPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-is
+
+- type: quickPhrase
+  id: GodPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-god
+
+- type: quickPhrase
+  id: MaterialsPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-materials
+
+- type: quickPhrase
+  id: KinkPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-kink
+
+- type: quickPhrase
+  id: BonePhrase
+  parent: BaseSubjectPhrase
+  text: phrase-bone
+
+- type: quickPhrase
+  id: PornographyPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-pornography
+
+- type: quickPhrase
+  id: MealPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-meal
+
+- type: quickPhrase
+  id: BreakfastPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-breakfast
+
+- type: quickPhrase
+  id: LunchPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-lunch
+
+- type: quickPhrase
+  id: DinnerPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-dinner
+
+- type: quickPhrase
+  id: SnackPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-snack
+
+- type: quickPhrase
+  id: WasPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-was
 ## Body Parts
 - type: quickPhrase
   id: ArmPhrase
@@ -459,6 +575,26 @@
   id: ShitPhrase
   parent: BaseSubjectPhrase
   text: phrase-shit
+
+- type: quickPhrase
+  id: SlutPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-slut
+
+- type: quickPhrase
+  id: TitsPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-tits
+
+- type: quickPhrase
+  id: BoobsPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-boobs
+
+- type: quickPhrase
+  id: DickPhrase
+  parent: BaseSubjectPhrase
+  text: phrase-dick
 
 ##Fluids
 - type: quickPhrase

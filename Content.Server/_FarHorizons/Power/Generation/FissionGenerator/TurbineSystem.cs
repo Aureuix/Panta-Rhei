@@ -407,7 +407,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
             else
                 value.SetFlowRate = turbine.FlowRate;
         }
-
+            
         UpdateUI(uid, turbine);
 
         return;
@@ -420,7 +420,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
                 turbine.FlowRate = newSet;
                 return true;
             }
-            return false;
+            return false; 
         }
     }
 
@@ -452,7 +452,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
                 turbine.StatorLoad = newSet;
                 return true;
             }
-            return false;
+            return false; 
         }
     }
 
@@ -496,7 +496,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
     {
         var state = SignalState.Momentary;
         args.Data?.TryGetValue(DeviceNetworkConstants.LogicState, out state);
-
+        
         if (args.Port == comp.StatorLoadIncreasePort)
             comp.IncreasePortState = state;
         else if (args.Port == comp.StatorLoadDecreasePort)
@@ -620,7 +620,7 @@ public sealed class TurbineSystem : SharedTurbineSystem
     {
         if (args.Cancelled)
             return;
-
+            
         if (comp.RPM < 1)
             return;
 
