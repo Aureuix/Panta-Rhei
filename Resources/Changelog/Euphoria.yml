@@ -5297,3 +5297,13 @@ Entries:
       message: Oracle can no longer dispense Romerol.
   id: 660
   time: '2026-08-22T02:43:17.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Remove
+      message: Romerol is no longer a fill option for random toilets and puddle spawns.
+    - type: Remove
+      message: >-
+        Removed rule 7.1. It was left in by accident, having meant to be
+        replaced by 7.2
+  id: 661
+  time: '2026-08-22T03:05:52.0000000+00:00'
