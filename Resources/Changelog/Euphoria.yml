@@ -5263,3 +5263,9 @@ Entries:
         undergarments that fit.
   id: 656
   time: '2026-08-22T01:48:28.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Smile should be able to eat and drink again.
+  id: 657
+  time: '2026-08-22T02:36:36.0000000+00:00'
