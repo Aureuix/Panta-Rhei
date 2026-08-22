@@ -5281,3 +5281,13 @@ Entries:
       message: Gives reporter undergarment selection
   id: 658
   time: '2026-08-22T02:38:05.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Cargo can now purchase a select amount of vending machines such as a few
+        food, drinks, clothing and lewd vendors.
+    - type: Add
+      message: These vending machines can be found under the Vending Machines category.
+  id: 659
+  time: '2026-08-22T02:39:29.0000000+00:00'
