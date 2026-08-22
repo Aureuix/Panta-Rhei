@@ -5307,3 +5307,11 @@ Entries:
         replaced by 7.2
   id: 661
   time: '2026-08-22T03:05:52.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        An option in the audio menu has been added for admins to mute chelp
+        notification sounds if they so desire.
+  id: 662
+  time: '2026-08-22T03:12:44.0000000+00:00'
