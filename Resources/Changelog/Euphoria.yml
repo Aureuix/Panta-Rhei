@@ -5315,3 +5315,9 @@ Entries:
         notification sounds if they so desire.
   id: 662
   time: '2026-08-22T03:12:44.0000000+00:00'
+- author: badlanduser
+  changes:
+    - type: Tweak
+      message: Admin RCD now gets extra options.
+  id: 663
+  time: '2026-08-22T05:52:52.0000000+00:00'
