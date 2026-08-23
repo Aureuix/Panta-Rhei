@@ -72,7 +72,7 @@ trait-heatintolerance-desc =
     Whether by growing up in a cold place, or from some genetic reason, your tolerance for hot temperatures is worse than others of your species.
 
 trait-heatintoleranceadvanced-name = Heat Intolerance - Advanced
-:wtrait-heatintoleranceadvanced-desc = 
+trait-heatintoleranceadvanced-desc = 
     You simply can't handle the heat. 
 
 trait-glassjaw-name = Glass Jaw
