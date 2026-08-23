@@ -653,7 +653,7 @@
   name: trait-name-Vampirism
   description: trait-description-Vampirism
   category: Skills
-  cost: 1 
+  cost: 2
   conflicts:
     - VampirismLite
   conditions:
@@ -679,7 +679,7 @@
   name: trait-name-vamplite
   description: trait-description-vamplite
   category: Skills
-  cost: 3
+  cost: 4
   conflicts:
   - Vampirism
   conditions:
