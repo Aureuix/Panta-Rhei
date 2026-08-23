@@ -42,13 +42,7 @@
           type: [ Vampiric ]
         reagent: Protein
         amount: 0.3
-      - !type:AdjustReagent
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Vampiric ]
-        reagent: Omnizine
-        amount: 0.1
-    #euphoria end
+        #Euphoria end
     Food:
       effects:
         - !type:AdjustReagent
