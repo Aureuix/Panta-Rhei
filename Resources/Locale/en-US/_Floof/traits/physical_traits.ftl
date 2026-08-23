@@ -122,12 +122,14 @@ trait-nosebleed-frequent-description =
 
 nosebleed-message = You feel blood dripping from your nose!
 
-trait-name-Vampirism = Vampirism
-trait-description-Vampirism =
-    Your body is capable of drinking iron-based blood from beings that contain it.
-    You cannot eat normal food, but blood provides all the sustainance you need.
+trait-name-vampirism = Vampiric: Necessity
+trait-description-vampirism =
+    You have fangs capable of piercing and draining iron-based blood from beings that contain it.
+    Blood can and must provide all the sustainance you need, as you are incapable of digesting most regular food.
     
 bloodsucker-wipe-marks-verb = Erase Bitemarks
 
-trait-name-vamplite = Hollow Fangs
-trait-description-vamplite = Whether through implantation, genetic modification, or evolution, you have a pair of hollow, sharp fangs used to drink iron-based blood from the beings that contain it.
+trait-name-vampirism-lite = Vampiric: Augmentation
+trait-description-vampirism-lite =
+    You have fangs capable of piercing and draining iron-based blood from beings that contain it.
+    Blood can sustain you just as well as food can, if need or desire be.

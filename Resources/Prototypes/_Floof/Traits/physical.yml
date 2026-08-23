@@ -650,8 +650,8 @@
 
 - type: trait
   id: Vampirism
-  name: trait-name-Vampirism
-  description: trait-description-Vampirism
+  name: trait-name-vampirism
+  description: trait-description-vampirism
   category: Skills
   cost: 2
   conflicts:
@@ -676,8 +676,8 @@
 
 - type: trait
   id: VampirismLite
-  name: trait-name-vamplite
-  description: trait-description-vamplite
+  name: trait-name-vampirism-lite
+  description: trait-description-vampirism-lite
   category: Skills
   cost: 4
   conflicts:
