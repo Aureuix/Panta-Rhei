@@ -666,6 +666,7 @@
     components:
       - type: Vampirism
         succDelay: 3
+        UnitsToSucc: 30
         specialDigestible: # Vampires cannot eat food chat is that real
           tags:
           - IceCream
@@ -692,3 +693,4 @@
     components:
     - type: Vampirism
       succDelay: 3
+      UnitsToSucc: 30
