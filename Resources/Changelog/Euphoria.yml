@@ -5345,3 +5345,11 @@ Entries:
       message: Some recipes have been tweaked to use Strawberries.
   id: 666
   time: '2026-08-24T09:48:28.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Added a rude gesture (works like waving) and a suggestive gesture (works
+        like checkout).
+  id: 667
+  time: '2026-08-24T09:49:39.0000000+00:00'
