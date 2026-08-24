@@ -5353,3 +5353,11 @@ Entries:
         like checkout).
   id: 667
   time: '2026-08-24T09:49:39.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Fix
+      message: >-
+        Ninjas should no longer be asked to bomb places they shouldn't. (Ask in
+        AHELP if unsure about your target!)
+  id: 668
+  time: '2026-08-24T12:31:02.0000000+00:00'
