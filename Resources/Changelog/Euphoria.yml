@@ -5327,3 +5327,9 @@ Entries:
       message: Dog Accent no longer changes L's to R's automatically.
   id: 664
   time: '2026-08-23T04:05:15.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Lowered the sale price of a stack of diamonds to 9k spesos.
+  id: 665
+  time: '2026-08-24T09:47:00.0000000+00:00'
