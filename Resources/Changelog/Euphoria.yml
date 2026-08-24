@@ -5333,3 +5333,15 @@ Entries:
       message: Lowered the sale price of a stack of diamonds to 9k spesos.
   id: 665
   time: '2026-08-24T09:47:00.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Botany can now grow Strawberries.
+    - type: Add
+      message: >-
+        Additional food and drink recipes for Strawberries have been added.
+        Strawberry Pilk is now a thing be afraid.
+    - type: Tweak
+      message: Some recipes have been tweaked to use Strawberries.
+  id: 666
+  time: '2026-08-24T09:48:28.0000000+00:00'
