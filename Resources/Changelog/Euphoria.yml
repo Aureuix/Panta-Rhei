@@ -5369,3 +5369,9 @@ Entries:
         lepo.
   id: 669
   time: '2026-08-25T07:44:13.0000000+00:00'
+- author: deltaSpawn0040
+  changes:
+    - type: Fix
+      message: Various Food Critic improvements.
+  id: 670
+  time: '2026-08-25T07:45:08.0000000+00:00'
