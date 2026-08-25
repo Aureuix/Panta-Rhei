@@ -5381,3 +5381,13 @@ Entries:
       message: Jaunter slot added to salvage webbing
   id: 671
   time: '2026-08-25T07:47:40.0000000+00:00'
+- author: Aikakakah
+  changes:
+    - type: Add
+      message: Added busty bosom markings and bras to fit.
+    - type: Tweak
+      message: >-
+        Increased species marking limits for undergarments, head top and head
+        side.
+  id: 672
+  time: '2026-08-25T09:09:54.0000000+00:00'
