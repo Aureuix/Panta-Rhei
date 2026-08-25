@@ -5361,3 +5361,11 @@ Entries:
         AHELP if unsure about your target!)
   id: 668
   time: '2026-08-24T12:31:02.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Tweak
+      message: >-
+        Changed description of space medipen to mention stabilizine instead of
+        lepo.
+  id: 669
+  time: '2026-08-25T07:44:13.0000000+00:00'
