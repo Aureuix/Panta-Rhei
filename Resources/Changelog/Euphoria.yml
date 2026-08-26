@@ -5399,3 +5399,9 @@ Entries:
         and Syndicate Recruiter spawning with default Urist names.
   id: 673
   time: '2026-08-25T09:18:33.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Chem should now be able to make colored crystals again.
+  id: 674
+  time: '2026-08-26T09:46:39.0000000+00:00'
