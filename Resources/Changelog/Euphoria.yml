@@ -5417,3 +5417,11 @@ Entries:
       message: New Pounce trait has been added.
   id: 676
   time: '2026-08-26T09:50:42.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Goliath stunlock by decreasing melee attack rate by 33%. Increased
+        damage by 33% to compensate.
+  id: 677
+  time: '2026-08-26T09:53:07.0000000+00:00'
