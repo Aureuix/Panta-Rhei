@@ -5431,3 +5431,30 @@ Entries:
       message: Security can now purchase Vulcan and Patos gun crates for the armory.
   id: 678
   time: '2026-08-26T09:59:12.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Add
+      message: Metamorphic hotdogs. Hotdog buns can hold a maximum of 6 ingredients.
+    - type: Add
+      message: >-
+        Uncooked hotdog bun which is made from a dough slice through the build
+        menu
+    - type: Add
+      message: Recipe cards to chef's locker detailing mainstream hotdog recipes.
+    - type: Add
+      message: >-
+        The following hotdogs: Los Angeles, Chicago, Chili, Condog, Coney
+        Island, Dildog, Dirty Water, Fishdog, Half Smoke, Polish Boy, Roddog,
+        Sushidog, Tofudog, Humadog, Bacon Supreme
+    - type: Tweak
+      message: >-
+        Burger buns are now made by shaping dough slice into a burger bun
+        through the build menu, then cooking.
+    - type: Add
+      message: >-
+        Cooked sausages can be made faster in the microwave, producing hotdog
+        water in the process.
+    - type: Add
+      message: Water recipe - hotdog water + holy water
+  id: 679
+  time: '2026-08-26T10:04:10.0000000+00:00'
