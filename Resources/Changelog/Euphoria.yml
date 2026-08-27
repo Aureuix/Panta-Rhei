@@ -5464,3 +5464,11 @@ Entries:
       message: Increased Musician job slots from 1 to 2 in most stations.
   id: 680
   time: '2026-08-27T05:54:20.0000000+00:00'
+- author: kivdon
+  changes:
+    - type: Fix
+      message: >-
+        Salvage's "Survival" selection on the mining voucher mentioned including
+        a medical tracking implanter, but it did not. It now does.
+  id: 681
+  time: '2026-08-27T06:51:38.0000000+00:00'
