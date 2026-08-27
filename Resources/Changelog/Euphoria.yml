@@ -5458,3 +5458,9 @@ Entries:
       message: Water recipe - hotdog water + holy water
   id: 679
   time: '2026-08-26T10:04:10.0000000+00:00'
+- author: CastitoWae
+  changes:
+    - type: Add
+      message: Increased Musician job slots from 1 to 2 in most stations.
+  id: 680
+  time: '2026-08-27T05:54:20.0000000+00:00'
