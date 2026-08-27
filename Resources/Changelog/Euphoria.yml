@@ -5492,3 +5492,11 @@ Entries:
       message: Puddles of space cleaner will now slowly evaporate.
   id: 684
   time: '2026-08-27T10:50:49.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Remove
+      message: Robo-neuro will no longer be told to borg everyone.
+    - type: Tweak
+      message: Robo-neuro will receive objectives for all eligible targets for borging.
+  id: 685
+  time: '2026-08-27T10:52:29.0000000+00:00'
