@@ -5472,3 +5472,11 @@ Entries:
         a medical tracking implanter, but it did not. It now does.
   id: 681
   time: '2026-08-27T06:51:38.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Added a few new traits, Messy Drinker, Very Messy Drinker, Messy Eater
+        and Messy Smoker.
+  id: 682
+  time: '2026-08-27T06:53:16.0000000+00:00'
