@@ -5480,3 +5480,9 @@ Entries:
         and Messy Smoker.
   id: 682
   time: '2026-08-27T06:53:16.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: The tether and force guns are researchable T3 tech again.
+  id: 683
+  time: '2026-08-27T06:54:24.0000000+00:00'
