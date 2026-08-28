@@ -5500,3 +5500,11 @@ Entries:
       message: Robo-neuro will receive objectives for all eligible targets for borging.
   id: 685
   time: '2026-08-27T10:52:29.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Revenants will now reveal themselves when colliding with species mobs
+        (this feature was perviously disabled due to a bug)
+  id: 686
+  time: '2026-08-28T08:37:22.0000000+00:00'
