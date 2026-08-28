@@ -5516,3 +5516,9 @@ Entries:
         available in Courier loadout.
   id: 687
   time: '2026-08-28T09:33:13.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: Any role will now be able to take the No Paradox Clone trait.
+  id: 688
+  time: '2026-08-28T23:01:01.0000000+00:00'
