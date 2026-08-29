@@ -5528,3 +5528,17 @@ Entries:
       message: Actually add the Strawberry seeds to the seed vending machine.
   id: 689
   time: '2026-08-28T23:01:53.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Loadout pets will now follow you around (but will prioritize looking for
+        food when hungry).
+    - type: Add
+      message: >-
+        Loadouts now have a new version of the remote signaller that
+        automatically links to your shock collar.
+    - type: Tweak
+      message: Players can now choose up to 5 trinkets instead of 4.
+  id: 690
+  time: '2026-08-29T10:47:27.0000000+00:00'
