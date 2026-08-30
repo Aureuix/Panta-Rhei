@@ -5542,3 +5542,9 @@ Entries:
       message: Players can now choose up to 5 trinkets instead of 4.
   id: 690
   time: '2026-08-29T10:47:27.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Roboticists can now make clown cars.
+  id: 691
+  time: '2026-08-30T03:09:11.0000000+00:00'
