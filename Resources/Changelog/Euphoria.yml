@@ -5556,3 +5556,13 @@ Entries:
         player through discord.
   id: 692
   time: '2026-08-30T05:11:51.0000000+00:00'
+- author: PhosphateWithManyOs
+  changes:
+    - type: Add
+      message: >-
+        Added admin spawn only Project Lazarus Combat Gear, as well as GALPOL &
+        TSF banners and clothing.
+    - type: Add
+      message: Added a generic CC Job Icon
+  id: 693
+  time: '2026-08-30T11:17:00.0000000+00:00'
