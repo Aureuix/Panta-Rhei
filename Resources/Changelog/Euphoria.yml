@@ -5548,3 +5548,11 @@ Entries:
       message: Roboticists can now make clown cars.
   id: 691
   time: '2026-08-30T03:09:11.0000000+00:00'
+- author: SyaoranFox
+  changes:
+    - type: Add
+      message: >-
+        Admin only to a bwoink message for admins to send through comments to a
+        player through discord.
+  id: 692
+  time: '2026-08-30T05:11:51.0000000+00:00'
