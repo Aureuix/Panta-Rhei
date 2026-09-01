@@ -5566,3 +5566,9 @@ Entries:
       message: Added a generic CC Job Icon
   id: 693
   time: '2026-08-30T11:17:00.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Like doctors, paramedics now have access to an advanced topicals belt.
+  id: 694
+  time: '2026-09-01T13:23:22.0000000+00:00'
