@@ -5578,3 +5578,11 @@ Entries:
       message: Changed descriptions of many posters, and names of a handful of posters.
   id: 695
   time: '2026-09-02T14:49:38.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Fix
+      message: >-
+        Mobs that can vent crawl should no longer be able to enter or exit a
+        welded vent.
+  id: 696
+  time: '2026-09-04T10:52:11.0000000+00:00'
