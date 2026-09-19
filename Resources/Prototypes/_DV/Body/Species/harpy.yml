@@ -15,19 +15,19 @@
       limit: 1
       required: true
       default: [ HarpyTailPhoenix ]
-    enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+    enum.HumanoidVisualLayers.HeadTop: # Euph - All marking limits to 10
+      limit: 10
       required: true
       default: [ HarpyEarsDefault ]
     enum.HumanoidVisualLayers.Chest:
-      limit: 2
+      limit: 10
       required: true
       default: [ HarpyChestDefault ]
     enum.HumanoidVisualLayers.LLeg:
-      limit: 2
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 2
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
       limit: 1

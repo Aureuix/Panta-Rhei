@@ -4,42 +4,42 @@
   onlyGroupWhitelisted: false # Euph - species can use common markings
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 # Euph - Let  chitinids have hair
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 0
+      limit: 1 # Euph - Same as above
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
       default: [ ChitinidWingsDefault ]
-    enum.HumanoidVisualLayers.Snout:
-      limit: 1
+    enum.HumanoidVisualLayers.Snout: # Euph - All marking limits to 10
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 10
       required: true
       default: [ ChitinidAntennasDefault ]
     enum.HumanoidVisualLayers.HeadSide:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Head:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Chest:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 6
+      limit: 10
       required: false
 
 - type: entity

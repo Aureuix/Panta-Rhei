@@ -7,31 +7,31 @@
     enum.HumanoidVisualLayers.FacialHair:
       limit: 1
       required: false
-    enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+    enum.HumanoidVisualLayers.HeadTop: # Euph - All marking limits to 10
+      limit: 10
       required: true
       default: [ OniHornDoubleCurved ]
     enum.HumanoidVisualLayers.HeadSide:
-      limit: 1
+      limit: 10
       required: false
       default: [ PointyEarsUpwards ]
     enum.HumanoidVisualLayers.Snout:
-      limit: 2
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Chest:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 6
+      limit: 10
       required: false
 
 # TODO: Do we need a scale here or is the one in Species/oni.yml enoguh

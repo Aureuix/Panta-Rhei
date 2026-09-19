@@ -12,23 +12,23 @@
       required: true
       default: [ FelinidTailBasic ]
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 10
       required: true
       default: [ FelinidEarsBasic ]
-    enum.HumanoidVisualLayers.Chest:
-      limit: 2
+    enum.HumanoidVisualLayers.Chest: # Euph - All marking limits to 10
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 6
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 6
+      limit: 10
       required: false
 
 - type: entity

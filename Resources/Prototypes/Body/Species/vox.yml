@@ -11,21 +11,21 @@
       onlyGroupWhitelisted: true
       required: false
     enum.HumanoidVisualLayers.Head:
-      limit: 4
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: true
       default: [ VoxBeak ]
-    enum.HumanoidVisualLayers.SnoutCover:
-      limit: 1
+    enum.HumanoidVisualLayers.SnoutCover: # Euph - All marking limits to 10
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 2
+      limit: 10
       required: false
       default: [ VoxLArmScales ]
     enum.HumanoidVisualLayers.RArm:
-      limit: 2
+      limit: 10
       required: false
       default: [ VoxRArmScales ]
     enum.HumanoidVisualLayers.LHand:
@@ -37,11 +37,11 @@
       required: true
       default: [ VoxRHandScales ]
     enum.HumanoidVisualLayers.LLeg:
-      limit: 1
+      limit: 10
       required: false
       default: [ VoxLLegScales ]
     enum.HumanoidVisualLayers.RLeg:
-      limit: 1
+      limit: 10
       required: false
       default: [ VoxRLegScales ]
     enum.HumanoidVisualLayers.LFoot:
@@ -53,21 +53,21 @@
       required: true
       default: [ VoxRFootScales ]
     enum.HumanoidVisualLayers.Chest:
-      limit: 2
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
       default: [ VoxTail ]
     enum.HumanoidVisualLayers.TailOverlay:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.UndergarmentTop:
-      limit: 1
+      limit: 10
       required: false
       nudityDefault: [ UndergarmentTopTanktopVox ]
     enum.HumanoidVisualLayers.UndergarmentBottom:
-      limit: 1
+      limit: 10
       required: false
       nudityDefault: [ UndergarmentBottomBoxersVox ]
 

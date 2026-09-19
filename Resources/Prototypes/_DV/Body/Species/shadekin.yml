@@ -2,47 +2,47 @@
   id: Shadekin
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 # Euph - let shadekin have hair
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 0
+      limit: 1 # Euph - same as above
       required: false
-    enum.HumanoidVisualLayers.Chest:
-      limit: 2
+    enum.HumanoidVisualLayers.Chest: # Euph - All marking limits to 10
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Snout:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LHand:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RHand:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LLeg:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RLeg:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.LFoot:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 1
+      limit: 10
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
       default: [TailShadekin]
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 10
       required: true
       default: [EarsShadekin]
 
