@@ -1,7 +1,7 @@
 - type: markingsGroup
   parent: [Undergarments, EuphoriaCommonMarkingLayers]
   id: Human
-  limits: # Euph - Switch to common markings
+  limits: {} # Euph - Switch to common markings
 #    enum.HumanoidVisualLayers.Hair:
 #      limit: 1
 #      required: false
