@@ -913,4 +913,3 @@
       - type: Vampirism
       - type: BloodSucker
         unitsToSucc: 40
-        Delay: 3
