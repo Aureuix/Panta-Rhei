@@ -1,20 +1,11 @@
 using Content.Server.Floofstation.Traits.Components;
-using Content.Server._Floof.Vampire;
 using Content.Shared.Body;
 using Content.Shared.Body.Components;
-using Content.Shared.Body.Systems;
-using Content.Shared.Metabolism;
 using Robust.Shared.Containers;
 
 
 namespace Content.Server.Floofstation.Traits;
 
-/// <summary>
-/// Makes sure entities with <see cref="VampirismComponent"/> have BloodSuckerComponent and
-/// sets their stomach's <see cref="StomachComponent"/> and <see cref="MetabolizerComponent"/>
-/// SpecialDigestible and MetabolizerTypes fields (respectively) according to the fields of
-/// <see cref="VampirismComponent"/>. Note: This implementation is not ideal.
-/// </summary>
 public sealed class VampirismSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _container = default!;
