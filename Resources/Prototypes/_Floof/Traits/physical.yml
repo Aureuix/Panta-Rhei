@@ -910,6 +910,7 @@
   effects:
   - !type:AddCompsEffect
     components:
-      - type: Vampirism
       - type: BloodSucker
         unitsToSucc: 40
+  - !type:ReplaceStomachEffect
+    stomachProto: OrganBloodStomach
