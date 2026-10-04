@@ -36,8 +36,8 @@ public sealed partial class ReplaceStomachEffect : BaseTraitEffect
             ctx.EntMan.QueueDeleteEntity(organ);
 
             // Give them a new one :3
-            var bloodStomach = ctx.EntMan.Spawn(StomachProto);
-            containerSys.Insert(bloodStomach, bodyComp.Organs);
+            var newStomach = ctx.EntMan.Spawn(StomachProto);
+            containerSys.Insert(newStomach, bodyComp.Organs);
         }
     }
 }
