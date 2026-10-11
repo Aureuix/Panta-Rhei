@@ -17,7 +17,7 @@
   metabolisms:
     Digestion:
       metabolites:
-        #UncookedAnimalProteins: 0.2 # Euphoria - Some folks wanna drink blood for funsies and that's okay :3
+        #UncookedAnimalProteins: 0.2 # Euphoria - Getting UncookedAnimalProteins from blood must be conditional
       effects:
       # - !type:SatiateThirst # Euphoria - Don't want anyone to be a better blood-drinker than anyone else unless they're a vampire.
       #   factor: 0.1
@@ -26,6 +26,13 @@
       #     type: [ Human ]
       #     inverted: true
       # -------------------------------- BEGIN Euphoria Changes
+      - !type:AdjustReagent
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Vampiric ]
+          inverted: true
+        reagent: UncookedAnimalProteins # Blood still needs to turn into UncookedAnimalProteins but only if it's not being metabolized by a vampire stomach.
+        amount: 0.2
       - !type:AdjustReagent
         conditions:
         - !type:MetabolizerTypeCondition
