@@ -910,7 +910,7 @@
   - !type:OneOfSpeciesCondition
     invert: true
     species:
-    - SlimePerson
+    - SlimePerson # As of October 12, 2026, a slime having their "stomach" replaced would also mean having their brain replaced, because it's the same organ in slimes. Taking this trait would delete a slime's brain.
   effects:
   - !type:AddCompsEffect
     components:
