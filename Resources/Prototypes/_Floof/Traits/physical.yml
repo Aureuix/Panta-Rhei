@@ -907,6 +907,10 @@
     invert: true
     species:
     - IPC
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - SlimePerson
   effects:
   - !type:AddCompsEffect
     components:
