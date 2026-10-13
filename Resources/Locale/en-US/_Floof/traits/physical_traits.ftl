@@ -163,3 +163,8 @@ trait-name-vampirism = Vampiric
 trait-description-vampirism =
     You have fangs capable of piercing and draining blood from beings that contain it.
     Blood can and must provide all the sustainance you need, as you are incapable of digesting most regular food.
+
+trait-name-partial-vampirism = Vampiric - Augmentation
+trait-description-partial-vampirism =
+    You have fangs capable of piercing and draining blood from beings that contain it.
+    Blood can provide you with all of the satiation that regular food does, if need or desire be.

@@ -900,8 +900,8 @@
   description: trait-description-vampirism
   category: Skills
   cost: 4
-  #conflicts:
-  #  - VampirismLite #Lite trait doesn't exist due to how ingestion works rn
+  conflicts:
+    - VampirismPartial
   conditions:
   - !type:OneOfSpeciesCondition
     invert: true
@@ -918,3 +918,25 @@
         unitsToSucc: 40
   - !type:ReplaceStomachEffect
     stomachProto: OrganBloodStomach
+
+- type: trait
+  id: VampirismPartial
+  name: trait-name-partial-vampirism
+  description: trait-description-partial-vampirism
+  category: Skills
+  cost: 6
+  conflicts:
+    - Vampirism
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+      - type: BloodSucker
+        unitsToSucc: 40
+  - !type:ModifyStomachMetabolizerEffect
+    newMetabolizerTypes: [ Vampiric ]
+    replace: false
