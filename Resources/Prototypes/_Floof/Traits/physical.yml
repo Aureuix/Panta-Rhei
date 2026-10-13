@@ -907,17 +907,22 @@
     invert: true
     species:
     - IPC
-  - !type:OneOfSpeciesCondition
-    invert: true
-    species:
-    - SlimePerson # As of October 12, 2026, a slime having their "stomach" replaced would also mean having their brain replaced, because it's the same organ in slimes. Taking this trait would delete a slime's brain.
   effects:
   - !type:AddCompsEffect
     components:
       - type: BloodSucker
         unitsToSucc: 40
-  - !type:ReplaceStomachEffect
-    stomachProto: OrganBloodStomach
+  - !type:ModifySpecialDigestibleWhitelists
+    newIsSpecialDigestibleExclusive: true
+    newSpecialDigestible:
+      tags:
+      - IceCream
+      - Pill
+      - Crayon
+      - Paper
+  - !type:ModifyStomachMetabolizerEffect
+    newMetabolizerTypes: [ Vampiric ]
+    replace: true
 
 - type: trait
   id: VampirismPartial
@@ -940,3 +945,80 @@
   - !type:ModifyStomachMetabolizerEffect
     newMetabolizerTypes: [ Vampiric ]
     replace: false
+
+- type: trait
+  abstract: true
+  id: BloodDrinkerBase
+  category: Skills
+  cost: 1
+  conflicts:
+    - Vampirism
+    - VampirismPartial
+    - SiphonFangs
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+
+- type: trait
+  id: BloodDrinkerInclusive
+  parent: BloodDrinkerBase
+  name: trait-name-blood-drinker-inclusive
+  description: trait-description-blood-drinker-inclusive
+  category: Skills
+  cost: 3
+  conflicts:
+    - BloodDrinkerExclusive
+    - Vampirism
+    - VampirismPartial
+  effects:
+  - !type:ModifyStomachMetabolizerEffect
+    newMetabolizerTypes: [ Vampiric ]
+    replace: false
+
+- type: trait
+  id: BloodDrinkerExclusive
+  parent: BloodDrinkerBase
+  name: trait-name-blood-drinker-exclusive
+  description: trait-description-blood-drinker-exclusive
+  category: Skills
+  cost: 1
+  conflicts:
+    - BloodDrinkerInclusive
+    - Vampirism
+    - VampirismPartial
+  effects:
+  - !type:ModifyStomachMetabolizerEffect
+    newMetabolizerTypes: [ Vampiric ]
+    replace: true
+  - !type:ModifySpecialDigestibleWhitelists
+    newIsSpecialDigestibleExclusive: true
+    newSpecialDigestible:
+      tags:
+      - IceCream # I'm not a monster
+      - Pill
+      - Crayon
+      - Paper
+
+- type: trait
+  id: SiphonFangs
+  name: trait-name-siphon-fangs
+  description: trait-description-siphon-fangs
+  category: Skills
+  cost: 2
+  conflicts:
+    - BloodDrinkerInclusive
+    - BloodDrinkerExclusive
+    - Vampirism
+    - VampirismPartial
+  conditions:
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
+  effects:
+  - !type:AddCompsEffect
+    components:
+      - type: BloodSucker
+        unitsToSucc: 40
