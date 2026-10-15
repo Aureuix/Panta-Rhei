@@ -907,7 +907,6 @@
       - BloodDrinkerExclusive
       - BloodDrinkerInclusive
       - SiphonFangs
-
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -970,7 +969,6 @@
       - Vampirism
       - VampirismPartial
       - SiphonFangs
-
   - !type:OneOfSpeciesCondition
     invert: true
     species:
