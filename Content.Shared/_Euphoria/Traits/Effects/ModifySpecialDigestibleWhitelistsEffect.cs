@@ -2,8 +2,6 @@ using System.Linq;
 using Content.Shared._DV.Traits.Effects;
 using Content.Shared.Body;
 using Content.Shared.Body.Components;
-using Robust.Shared.Prototypes;
-using Content.Shared.Metabolism;
 using Content.Shared.Whitelist;
 using Content.Shared.Body.Systems;
 

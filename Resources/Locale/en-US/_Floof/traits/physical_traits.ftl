@@ -181,19 +181,3 @@ trait-name-siphon-fangs = Siphon Fangs
 trait-description-siphon-fangs =
     You have fangs capable of piercing and draining blood from beings that contain it.
     This does NOT necessarily mean what you suck out will be safe for you to drink.
-
-trait-name-larger-stomach-150-percent = Larger Stomach - 1.5x
-trait-description-large-stomach-150-percent =
-    Your stomach is 1.5x (150% the size of, or 50% larger than) the size normal for your species.
-
-trait-name-larger-stomach-200-percent = Larger Stomach - 2x
-trait-description-large-stomach-200-percent =
-    Your stomach is 2x (200% the size of, or 100% larger than) the size normal for your species.
-
-trait-name-larger-stomach-300-percent = Larger Stomach - 3x
-trait-description-large-stomach-300-percent =
-    Your stomach is 3x (300% the size of, or 200% larger than) the size normal for your species.
-
-trait-name-larger-stomach-500-percent = Larger Stomach - 5x
-trait-description-large-stomach-500-percent =
-    Your stomach is 5x (500% the size of, or 400% larger than) the size normal for your species.

@@ -11,13 +11,7 @@ using Content.Shared.EntityConditions.Conditions;
 using Content.Shared.EntityConditions.Conditions.Body;
 using Content.Shared.EntityEffects;
 using Content.Shared.EntityEffects.Effects.Body;
-using Content.Shared.EntityEffects.Effects.Solution;
-using Content.Shared.FixedPoint;
-using Content.Shared.Mobs.Systems;
-using Content.Shared.Random.Helpers;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Random;
-using Robust.Shared.Timing;
 
 namespace Content.Shared.Metabolism;
 
