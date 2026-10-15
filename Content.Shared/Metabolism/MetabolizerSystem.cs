@@ -22,7 +22,7 @@ using Robust.Shared.Timing;
 namespace Content.Shared.Metabolism;
 
 /// <inheritdoc/>
-public sealed partial class MetabolizerSystem : EntitySystem // Euphoria - Converted to partial so that fields on StomachComponent could be set by setters
+public sealed partial class MetabolizerSystem : EntitySystem // Euphoria - Converted to partial so that fields on MetabolizerComponent could be set by setters
 {
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
