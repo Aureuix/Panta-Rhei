@@ -21,7 +21,6 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Metabolism;
 
-/// <inheritdoc/>
 public sealed partial class MetabolizerSystem
 {
     public void SetMetabolizerTypes(MetabolizerComponent metComp, HashSet<ProtoId<MetabolizerTypePrototype>> newMetabolizerTypes)
