@@ -38,7 +38,6 @@ public sealed partial class ModifySpecialDigestibleWhitelists : BaseTraitEffect
 
         foreach (var organ in stomachOrgans)
         {
-            // Gotta have a shit ton of null checks
             if (organ is not { } organNotNull || organNotNull.Comp is not { } stoComp)
                 continue;
 
