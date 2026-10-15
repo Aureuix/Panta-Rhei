@@ -912,6 +912,7 @@
     components:
       - type: BloodSucker
         unitsToSucc: 40
+        spillIfTransferFails: false
   - !type:ModifySpecialDigestibleWhitelists
     newIsSpecialDigestibleExclusive: true
     newSpecialDigestible:
@@ -942,6 +943,7 @@
     components:
       - type: BloodSucker
         unitsToSucc: 40
+        spillIfTransferFails: false
   - !type:ModifyStomachMetabolizerEffect
     newMetabolizerTypes: [ Vampiric ]
     replace: false
@@ -1022,3 +1024,4 @@
     components:
       - type: BloodSucker
         unitsToSucc: 40
+        spillIfTransferFails: false
