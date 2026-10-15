@@ -66,7 +66,7 @@ public sealed partial class BloodSuckerComponent : Component
     [DataField("webRequired")]
     public bool WebRequired = false;
 
-    // ***EFFICIENCY AND WHEN TO SPILL OR NOT***
+    // ***END INJECT WHEN SUCC***
 
     /// <summary>
     /// Should the the solution be spilled on the floor if we
