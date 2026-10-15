@@ -958,22 +958,7 @@
     replace: false
 
 - type: trait
-  abstract: true
-  id: BloodDrinkerBase
-  category: Skills
-  cost: 1
-  conditions:
-  - !type:TraitDependencyCondition
-      conflicts:
-      - VampirismPartial
-  - !type:OneOfSpeciesCondition
-    invert: true
-    species:
-    - IPC
-
-- type: trait
   id: BloodDrinkerInclusive
-  parent: BloodDrinkerBase
   name: trait-name-blood-drinker-inclusive
   description: trait-description-blood-drinker-inclusive
   category: Skills
@@ -997,7 +982,6 @@
 
 - type: trait
   id: BloodDrinkerExclusive
-  parent: BloodDrinkerBase
   name: trait-name-blood-drinker-exclusive
   description: trait-description-blood-drinker-exclusive
   category: Skills
@@ -1039,7 +1023,6 @@
       - BloodDrinkerExclusive
       - Vampirism
       - VampirismPartial
-      - SiphonFangs
   - !type:OneOfSpeciesCondition
     invert: true
     species:
