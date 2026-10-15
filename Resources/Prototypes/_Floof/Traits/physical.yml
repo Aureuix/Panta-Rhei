@@ -900,9 +900,14 @@
   description: trait-description-vampirism
   category: Skills
   cost: 4
-  conflicts:
-    - VampirismPartial
   conditions:
+  - !type:TraitDependencyCondition
+      conflicts:
+      - VampirismPartial
+      - BloodDrinkerExclusive
+      - BloodDrinkerInclusive
+      - SiphonFangs
+
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -931,9 +936,13 @@
   description: trait-description-partial-vampirism
   category: Skills
   cost: 6
-  conflicts:
-    - Vampirism
   conditions:
+  - !type:TraitDependencyCondition
+      conflicts:
+      - Vampirism
+      - BloodDrinkerExclusive
+      - BloodDrinkerInclusive
+      - SiphonFangs
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -953,11 +962,10 @@
   id: BloodDrinkerBase
   category: Skills
   cost: 1
-  conflicts:
-    - Vampirism
-    - VampirismPartial
-    - SiphonFangs
   conditions:
+  - !type:TraitDependencyCondition
+      conflicts:
+      - VampirismPartial
   - !type:OneOfSpeciesCondition
     invert: true
     species:
@@ -970,10 +978,18 @@
   description: trait-description-blood-drinker-inclusive
   category: Skills
   cost: 3
-  conflicts:
-    - BloodDrinkerExclusive
-    - Vampirism
-    - VampirismPartial
+  conditions:
+  - !type:TraitDependencyCondition
+      conflicts:
+      - BloodDrinkerExclusive
+      - Vampirism
+      - VampirismPartial
+      - SiphonFangs
+
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
   effects:
   - !type:ModifyStomachMetabolizerEffect
     newMetabolizerTypes: [ Vampiric ]
@@ -986,10 +1002,17 @@
   description: trait-description-blood-drinker-exclusive
   category: Skills
   cost: 1
-  conflicts:
-    - BloodDrinkerInclusive
-    - Vampirism
-    - VampirismPartial
+  conditions:
+  - !type:TraitDependencyCondition
+      conflicts:
+      - BloodDrinkerInclusive
+      - Vampirism
+      - VampirismPartial
+      - SiphonFangs
+  - !type:OneOfSpeciesCondition
+    invert: true
+    species:
+    - IPC
   effects:
   - !type:ModifyStomachMetabolizerEffect
     newMetabolizerTypes: [ Vampiric ]
@@ -1009,12 +1032,14 @@
   description: trait-description-siphon-fangs
   category: Skills
   cost: 2
-  conflicts:
-    - BloodDrinkerInclusive
-    - BloodDrinkerExclusive
-    - Vampirism
-    - VampirismPartial
   conditions:
+  - !type:TraitDependencyCondition
+      conflicts:
+      - BloodDrinkerInclusive
+      - BloodDrinkerExclusive
+      - Vampirism
+      - VampirismPartial
+      - SiphonFangs
   - !type:OneOfSpeciesCondition
     invert: true
     species:
