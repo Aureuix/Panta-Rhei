@@ -3,7 +3,6 @@
 - type: marking
   id: MobIPCHeadStandard
   bodyPart: Head
-  markingCategory: Head
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: head_m
@@ -12,7 +11,6 @@
 - type: marking
   id: MobIPCTorsoStandardAlt
   bodyPart: Chest
-  markingCategory: Chest
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: torso_f
@@ -21,7 +19,6 @@
 - type: marking
   id: MobIPCTorsoStandard
   bodyPart: Chest
-  markingCategory: Chest
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: torso_m
@@ -33,7 +30,6 @@
 - type: marking
   id: MobIPCLLegStandard
   bodyPart: LLeg
-  markingCategory: Legs
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: l_leg
@@ -42,7 +38,6 @@
 - type: marking
   id: MobIPCLArmStandard
   bodyPart: LArm
-  markingCategory: Arms
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: l_arm
@@ -51,7 +46,6 @@
 - type: marking
   id: MobIPCLHandStandard
   bodyPart: LHand
-  markingCategory: Arms
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: l_hand
@@ -60,7 +54,6 @@
 - type: marking
   id: MobIPCLFootStandard
   bodyPart: LFoot
-  markingCategory: Legs
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: l_foot
@@ -70,7 +63,6 @@
 - type: marking
   id: MobIPCRLegStandard
   bodyPart: RLeg
-  markingCategory: Legs
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: r_leg
@@ -78,7 +70,6 @@
 - type: marking
   id: MobIPCRArmStandard
   bodyPart: RArm
-  markingCategory: Arms
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: r_arm
@@ -86,7 +77,6 @@
 - type: marking
   id: MobIPCRHandStandard
   bodyPart: RHand
-  markingCategory: Arms
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: r_hand
@@ -94,7 +84,6 @@
 - type: marking
   id: MobIPCRFootStandard
   bodyPart: RFoot
-  markingCategory: Legs
   sprites:
   - sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
     state: r_foot
