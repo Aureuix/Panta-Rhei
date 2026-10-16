@@ -43,6 +43,7 @@
       required: true
       default: [ MobIPCRFootStandard ]
    # Everything is common
+   # Euphoria: all categories that IPCs had an external organ sprite for are changed to required with a default marking to allow for the default sprites to be removed.
 
 - type: entity
   parent: BaseSpeciesAppearance
