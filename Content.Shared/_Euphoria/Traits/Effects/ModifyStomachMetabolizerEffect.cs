@@ -44,26 +44,26 @@ public sealed partial class ModifyStomachMetabolizerEffect : BaseTraitEffect
             if (!ctx.EntMan.TryGetComponent<MetabolizerComponent>(organ, out var metComp))
                  continue;
 
-            if (NewMetabolizerTypes is not { } || metComp is not { })
+            if (NewMetabolizerTypes is not { } editableNewMetabolizerTypes || metComp is not { })
                 continue;
 
-             /*
-             Even if we're supposed to be merging rather than replacing,
-             there's no point in combining it with a null set.
+            /*
+            Even if we're supposed to be merging rather than replacing,
+            there's no point in combining it with a null set.
 
-             Also, if someone decided to make a species where the lungs and
-             stomach are the same organ, we can't straight up replace
-             all their metabolisms or they will stop being able to benefit
-             from breathing, which is bad.
+            Also, if someone decided to make a species where the lungs and
+            stomach are the same organ, we can't straight up replace
+            all their metabolisms or they will stop being able to benefit
+            from breathing, which is bad.
 
-             AFAIK, such a species doesn't exist right now on any fork
-             and probably never will, but I don't want anyone to have to
-             fix this if I'm wrong about that. */
+            AFAIK, such a species doesn't exist right now on any fork
+            and probably never will, but I don't want anyone to have to
+            fix this if I'm wrong about that. */
             if ((!Replace || ctx.EntMan.TryGetComponent<LungComponent>(organ, out var lungComp)) &&
                 metComp.MetabolizerTypes is { } originalMetabolizerTypes)
-                NewMetabolizerTypes.UnionWith(originalMetabolizerTypes);
+                editableNewMetabolizerTypes.UnionWith(originalMetabolizerTypes);
 
-            _metabolizerSystem.SetMetabolizerTypes(metComp, NewMetabolizerTypes);
+            _metabolizerSystem.SetMetabolizerTypes(metComp, editableNewMetabolizerTypes);
         }
     }
 }
